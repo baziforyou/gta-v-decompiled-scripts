@@ -2457,11 +2457,11 @@ void func_29()
 	Var0.f_1517 = 32;
 	if (Global_2672938)
 	{
-		MISC::COPY_SCRIPT_STRUCT(&Global_1673654, &Var0, 1557);
+		MISC::COPY_SCRIPT_STRUCT(&Global_1673655, &Var0, 1557);
 	}
 	else
 	{
-		Global_1673654 = { Var0 };
+		Global_1673655 = { Var0 };
 	}
 }
 
@@ -2513,11 +2513,11 @@ void func_32()
 	Var0.f_59 = 8;
 	if (Global_2672938)
 	{
-		MISC::COPY_SCRIPT_STRUCT(&Global_1668409, &Var0, 188);
+		MISC::COPY_SCRIPT_STRUCT(&Global_1668410, &Var0, 188);
 	}
 	else
 	{
-		Global_1668409 = { Var0 };
+		Global_1668410 = { Var0 };
 	}
 }
 
@@ -5950,11 +5950,11 @@ void func_57()
 	Var0.f_16 = 2;
 	if (Global_2672938)
 	{
-		MISC::COPY_SCRIPT_STRUCT(&Global_1685172, &Var0, 27);
+		MISC::COPY_SCRIPT_STRUCT(&Global_1685173, &Var0, 27);
 	}
 	else
 	{
-		Global_1685172 = { Var0 };
+		Global_1685173 = { Var0 };
 	}
 }
 
@@ -6429,11 +6429,11 @@ void func_67(int iParam0)
 	
 	if (Global_2672938)
 	{
-		MISC::COPY_SCRIPT_STRUCT(&(Global_1685445[iParam0 /*26*/]), &Var0, 26);
+		MISC::COPY_SCRIPT_STRUCT(&(Global_1685446[iParam0 /*26*/]), &Var0, 26);
 	}
 	else
 	{
-		Global_1685445[iParam0 /*26*/] = { Var0 };
+		Global_1685446[iParam0 /*26*/] = { Var0 };
 	}
 }
 
@@ -6443,11 +6443,11 @@ void func_68(int iParam0)
 	
 	if (Global_2672938)
 	{
-		MISC::COPY_SCRIPT_STRUCT(&(Global_1685229[iParam0]), &uVar0, 1);
+		MISC::COPY_SCRIPT_STRUCT(&(Global_1685230[iParam0]), &uVar0, 1);
 	}
 	else
 	{
-		Global_1685229[iParam0] = uVar0;
+		Global_1685230[iParam0] = uVar0;
 	}
 }
 

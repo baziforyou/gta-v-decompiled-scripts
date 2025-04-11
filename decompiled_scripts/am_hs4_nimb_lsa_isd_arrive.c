@@ -1049,18 +1049,18 @@ void func_35(bool bParam0, bool bParam1, int iParam2)
 		case 5:
 			if (iParam2 > -1)
 			{
-				Global_1673654.f_137[iParam2] = bParam1;
+				Global_1673655.f_137[iParam2] = bParam1;
 			}
 			break;
 		
 		default:
 			if (bParam1)
 			{
-				MISC::SET_BIT(&(Global_1673654.f_1046), bParam0);
+				MISC::SET_BIT(&(Global_1673655.f_1046), bParam0);
 			}
 			else
 			{
-				MISC::CLEAR_BIT(&(Global_1673654.f_1046), bParam0);
+				MISC::CLEAR_BIT(&(Global_1673655.f_1046), bParam0);
 			}
 			break;
 	}
@@ -19206,7 +19206,7 @@ int func_134(int iParam0)
 {
 	if (func_135(1))
 	{
-		return Global_1685296;
+		return Global_1685297;
 	}
 	if (iParam0 <= -1 || iParam0 >= 4)
 	{
@@ -21427,10 +21427,10 @@ int func_155(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 				iVar76 = -1;
 				if (BitTest(Global_79322[1 /*14*/].f_6, 6) && FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(Global_2883588, joaat("CREW_COL"), 11))
 				{
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 0);
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 1);
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 2);
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 3);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 0);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 1);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 2);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 3);
 				}
 				iVar77 = func_112(iParam0, 11);
 				iVar78 = func_112(iParam0, 8);
@@ -77810,7 +77810,7 @@ int func_370(int iParam0)
 			{
 				iVar1 = MISC::GET_GAME_TIMER();
 			}
-			iVar2 = MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(iVar1, Global_1577965));
+			iVar2 = MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(iVar1, Global_1577966));
 			iVar3 = 20000;
 			if (Global_1836691)
 			{
@@ -77877,11 +77877,11 @@ int func_372(int iParam0, int iParam1)
 		{
 			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 			{
-				Global_1577965 = NETWORK::GET_NETWORK_TIME();
+				Global_1577966 = NETWORK::GET_NETWORK_TIME();
 			}
 			else
 			{
-				Global_1577965 = MISC::GET_GAME_TIMER();
+				Global_1577966 = MISC::GET_GAME_TIMER();
 			}
 			return 1;
 		}
@@ -77916,11 +77916,11 @@ int func_372(int iParam0, int iParam1)
 		{
 			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 			{
-				Global_1577965 = NETWORK::GET_NETWORK_TIME();
+				Global_1577966 = NETWORK::GET_NETWORK_TIME();
 			}
 			else
 			{
-				Global_1577965 = MISC::GET_GAME_TIMER();
+				Global_1577966 = MISC::GET_GAME_TIMER();
 			}
 			return 1;
 		}
@@ -81733,7 +81733,7 @@ int func_379(int iParam0, var* uParam1)
 		iVar2 = Global_2359296[func_327() /*5571*/].f_681.f_2;
 		if (iVar2 > -1 && iVar2 < 547)
 		{
-			if (BitTest(Global_1586535[iVar2 /*143*/].f_104, 8))
+			if (BitTest(Global_1586536[iVar2 /*143*/].f_104, 8))
 			{
 				bVar1 = true;
 			}
@@ -82630,9 +82630,9 @@ int func_396(int iParam0, int iParam1, int iParam2)
 	{
 		return 12;
 	}
-	if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && func_313()) && Global_1576240)
+	if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && func_313()) && Global_1576241)
 	{
-		if ((iParam0 == Global_1576241 && iParam1 == Global_1576242) && iParam2 == Global_1576243)
+		if ((iParam0 == Global_1576242 && iParam1 == Global_1576243) && iParam2 == Global_1576244)
 		{
 			return 13;
 		}
@@ -84525,13 +84525,13 @@ void func_440(bool bParam0)
 
 void func_441(bool bParam0, int iParam1)
 {
-	MISC::SET_BIT(&(Global_1673654.f_1047), iParam0);
+	MISC::SET_BIT(&(Global_1673655.f_1047), iParam0);
 	switch (bParam0)
 	{
 		case 5:
 			if (iParam1 > -1)
 			{
-				Global_1673654.f_170[iParam1] = 1;
+				Global_1673655.f_170[iParam1] = 1;
 			}
 			break;
 	}

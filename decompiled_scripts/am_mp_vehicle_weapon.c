@@ -265,12 +265,12 @@ void func_3()
 
 void func_4(int iParam0)
 {
-	Global_1577950 = iParam0;
+	Global_1577951 = iParam0;
 }
 
 void func_5(int iParam0)
 {
-	Global_1675211.f_1163 = iParam0;
+	Global_1675212.f_1163 = iParam0;
 }
 
 void func_6()
@@ -718,11 +718,11 @@ var func_18(int iParam0, int iParam1)
 		case 5:
 			if (iParam1 > -1)
 			{
-				return Global_1673654.f_203[iParam1];
+				return Global_1673655.f_203[iParam1];
 			}
 			break;
 	}
-	return BitTest(Global_1673654.f_1048, iParam0);
+	return BitTest(Global_1673655.f_1048, iParam0);
 }
 
 int func_19(var uParam0, bool bParam1, int iParam2)
@@ -1430,9 +1430,9 @@ int func_31()
 {
 	if (func_27(PLAYER::PLAYER_ID(), 0))
 	{
-		if (ENTITY::DOES_ENTITY_EXIST(Global_1668128))
+		if (ENTITY::DOES_ENTITY_EXIST(Global_1668129))
 		{
-			return Global_1668128;
+			return Global_1668129;
 		}
 		if (Global_1845060 != -1)
 		{
@@ -2017,7 +2017,7 @@ int func_60()
 {
 	if (func_27(PLAYER::PLAYER_ID(), 0))
 	{
-		return Global_1668128;
+		return Global_1668129;
 	}
 	return -1;
 }
@@ -3926,9 +3926,9 @@ int func_117()
 	{
 		if (!func_119(Global_1845060) && !func_118(Global_1845060))
 		{
-			if (ENTITY::DOES_ENTITY_EXIST(Global_1668128))
+			if (ENTITY::DOES_ENTITY_EXIST(Global_1668129))
 			{
-				return Global_1668128;
+				return Global_1668129;
 			}
 			if (ENTITY::DOES_ENTITY_EXIST(Global_1962794[Global_1845060]))
 			{
@@ -4837,7 +4837,7 @@ int func_153()
 
 int func_154()
 {
-	if (Global_1582028 != -1 || Global_1582034 != -1)
+	if (Global_1582029 != -1 || Global_1582035 != -1)
 	{
 		if (((ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), "ANIM@AMB@FACILITY@LAUNCH_CONTROLS@", "COMPUTER_idle", 3) || ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), "ANIM@AMB@FACILITY@LAUNCH_CONTROLS@", "COMPUTER_idle_control", 3)) || ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), "ANIM@AMB@FACILITY@LAUNCH_CONTROLS@", "COMPUTER_enter_control", 3)) || ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), "ANIM@AMB@FACILITY@LAUNCH_CONTROLS@", "COMPUTER_enter", 3))
 		{
@@ -4961,7 +4961,7 @@ int func_155()
 	}
 	if (func_161(PLAYER::PLAYER_ID()) || func_162(PLAYER::PLAYER_ID()))
 	{
-		switch (Global_1582034)
+		switch (Global_1582035)
 		{
 			case 1:
 				if (Global_262145.f_22740)
@@ -4985,7 +4985,7 @@ int func_155()
 				break;
 			}
 	}
-	if (Global_1582032 == 1)
+	if (Global_1582033 == 1)
 	{
 		return 1;
 	}
@@ -5199,7 +5199,7 @@ bool func_172(char* sParam0)
 
 int func_173()
 {
-	if ((func_27(PLAYER::PLAYER_ID(), 0) && Global_1582028 == 2) && func_174())
+	if ((func_27(PLAYER::PLAYER_ID(), 0) && Global_1582029 == 2) && func_174())
 	{
 		return 1;
 	}
@@ -5208,7 +5208,7 @@ int func_173()
 
 int func_174()
 {
-	if (Global_1582028 != -1 || Global_1582034 != -1)
+	if (Global_1582029 != -1 || Global_1582035 != -1)
 	{
 		if ((((ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), "ANIM@AMB@FACILITY@LAUNCH_CONTROLS@", "enter", 3) || ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), "ANIM@AMB@FACILITY@LAUNCH_CONTROLS@", "enter_left", 3)) || ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), "ANIM@AMB@FACILITY@LAUNCH_CONTROLS@", "exit", 3)) || ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), "ANIM@AMB@FACILITY@LAUNCH_CONTROLS@", "exit_left", 3)) || func_175(PLAYER::PLAYER_PED_ID(), joaat("script_task_go_straight_to_coord")))
 		{
@@ -5310,7 +5310,7 @@ int func_177()
 	{
 		return 1;
 	}
-	if (Global_1582032)
+	if (Global_1582033)
 	{
 		return 1;
 	}

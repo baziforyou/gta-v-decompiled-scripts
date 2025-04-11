@@ -60346,7 +60346,7 @@ int func_550(int iParam0)
 				{
 					if (func_552() != -1 && func_552() < 547)
 					{
-						if (!func_551(iParam0) || ENTITY::GET_ENTITY_MODEL(iParam0) != Global_1586535[func_552() /*143*/].f_66)
+						if (!func_551(iParam0) || ENTITY::GET_ENTITY_MODEL(iParam0) != Global_1586536[func_552() /*143*/].f_66)
 						{
 							return 1;
 						}

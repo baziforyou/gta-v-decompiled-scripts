@@ -2562,14 +2562,14 @@ void func_3(bool bParam0)
 
 void func_4()
 {
-	GRAPHICS::DRAW_SCALEFORM_MOVIE_FULLSCREEN(Global_1577916, 255, 255, 255, 255, 0);
-	if (Global_1577921 == 0)
+	GRAPHICS::DRAW_SCALEFORM_MOVIE_FULLSCREEN(Global_1577917, 255, 255, 255, 255, 0);
+	if (Global_1577922 == 0)
 	{
-		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_1577916, "SET_BIG_LOGO_VISIBLE");
+		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_1577917, "SET_BIG_LOGO_VISIBLE");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-		Global_1577921 = 1;
+		Global_1577922 = 1;
 	}
 }
 
@@ -4182,11 +4182,11 @@ bool func_64(int iParam0, int iParam1)
 		case 5:
 			if (iParam1 > -1)
 			{
-				return Global_1673654.f_203[iParam1];
+				return Global_1673655.f_203[iParam1];
 			}
 			break;
 	}
-	return BitTest(Global_1673654.f_1048, iParam0);
+	return BitTest(Global_1673655.f_1048, iParam0);
 }
 
 void func_65()
@@ -4840,14 +4840,14 @@ int func_93(int iParam0)
 
 void func_94()
 {
-	Global_1577921 = 0;
-	if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(Global_1577916))
+	Global_1577922 = 0;
+	if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(Global_1577917))
 	{
-		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_1577916, "SET_BIG_LOGO_VISIBLE");
+		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_1577917, "SET_BIG_LOGO_VISIBLE");
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(1);
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(false);
 		GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-		GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&Global_1577916);
+		GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&Global_1577917);
 	}
 }
 
@@ -4918,9 +4918,9 @@ int func_98()
 	{
 		return 0;
 	}
-	if (!GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(Global_1577916))
+	if (!GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(Global_1577917))
 	{
-		Global_1577916 = GRAPHICS::REQUEST_SCALEFORM_MOVIE("GTAV_ONLINE");
+		Global_1577917 = GRAPHICS::REQUEST_SCALEFORM_MOVIE("GTAV_ONLINE");
 		return 0;
 	}
 	return 1;
@@ -6550,18 +6550,18 @@ void func_145(bool bParam0, bool bParam1, int iParam2)
 		case 5:
 			if (iParam2 > -1)
 			{
-				Global_1673654.f_137[iParam2] = bParam1;
+				Global_1673655.f_137[iParam2] = bParam1;
 			}
 			break;
 		
 		default:
 			if (bParam1)
 			{
-				MISC::SET_BIT(&(Global_1673654.f_1046), iParam0);
+				MISC::SET_BIT(&(Global_1673655.f_1046), iParam0);
 			}
 			else
 			{
-				MISC::CLEAR_BIT(&(Global_1673654.f_1046), bParam0);
+				MISC::CLEAR_BIT(&(Global_1673655.f_1046), bParam0);
 			}
 			break;
 	}
@@ -9197,7 +9197,7 @@ int func_173(int iParam0)
 	{
 		return 0;
 	}
-	if (Global_1577924)
+	if (Global_1577925)
 	{
 		return 0;
 	}
@@ -9620,15 +9620,15 @@ void func_189(bool bParam0, bool bParam1)
 		{
 			STREAMING::STOP_PLAYER_SWITCH();
 			func_190(0);
-			if (ENTITY::DOES_ENTITY_EXIST(Global_1577875))
+			if (ENTITY::DOES_ENTITY_EXIST(Global_1577876))
 			{
-				if (ENTITY::DOES_ENTITY_BELONG_TO_THIS_SCRIPT(Global_1577875, false))
+				if (ENTITY::DOES_ENTITY_BELONG_TO_THIS_SCRIPT(Global_1577876, false))
 				{
-					if (!ENTITY::IS_ENTITY_A_MISSION_ENTITY(Global_1577875))
+					if (!ENTITY::IS_ENTITY_A_MISSION_ENTITY(Global_1577876))
 					{
-						ENTITY::SET_ENTITY_AS_MISSION_ENTITY(Global_1577875, false, false);
+						ENTITY::SET_ENTITY_AS_MISSION_ENTITY(Global_1577876, false, false);
 					}
-					PED::DELETE_PED(&Global_1577875);
+					PED::DELETE_PED(&Global_1577876);
 				}
 			}
 		}

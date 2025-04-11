@@ -11150,11 +11150,11 @@ bool func_253(int iParam0, int iParam1)
 		case 5:
 			if (iParam1 > -1)
 			{
-				return Global_1673654.f_203[iParam1];
+				return Global_1673655.f_203[iParam1];
 			}
 			break;
 	}
-	return BitTest(Global_1673654.f_1048, iParam0);
+	return BitTest(Global_1673655.f_1048, iParam0);
 }
 
 void func_254(var uParam0, int iParam1, char* sParam2, int iParam3, int iParam4, int iParam5)
@@ -20457,7 +20457,7 @@ bool func_298()
 
 bool func_299()
 {
-	return Global_1586535[189 /*143*/].f_66 == joaat("thruster");
+	return Global_1586536[189 /*143*/].f_66 == joaat("thruster");
 }
 
 int func_300()

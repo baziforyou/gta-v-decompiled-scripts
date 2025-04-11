@@ -3352,13 +3352,13 @@ void func_40(bool bParam0)
 
 void func_41(bool bParam0, int iParam1)
 {
-	MISC::SET_BIT(&(Global_1673654.f_1047), bParam0);
+	MISC::SET_BIT(&(Global_1673655.f_1047), bParam0);
 	switch (bParam0)
 	{
 		case 5:
 			if (iParam1 > -1)
 			{
-				Global_1673654.f_170[iParam1] = 1;
+				Global_1673655.f_170[iParam1] = 1;
 			}
 			break;
 	}

@@ -1057,7 +1057,7 @@ void func_12()
 
 bool func_13(int iParam0)
 {
-	return BitTest(Global_1673654.f_241.f_136[func_15(9) /*33*/][iParam0], func_14(9));
+	return BitTest(Global_1673655.f_241.f_136[func_15(9) /*33*/][iParam0], func_14(9));
 }
 
 int func_14(int iParam0)
@@ -1143,13 +1143,13 @@ void func_21(bool bParam0)
 
 void func_22(int iParam0, int iParam1)
 {
-	MISC::SET_BIT(&(Global_1673654.f_1047), iParam0);
+	MISC::SET_BIT(&(Global_1673655.f_1047), iParam0);
 	switch (iParam0)
 	{
 		case 5:
 			if (iParam1 > -1)
 			{
-				Global_1673654.f_170[iParam1] = 1;
+				Global_1673655.f_170[iParam1] = 1;
 			}
 			break;
 	}
@@ -1850,7 +1850,7 @@ int func_48(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 	int iVar0;
 	int iVar1;
 	
-	if (!BitTest(Global_1686501, 0))
+	if (!BitTest(Global_1686502, 0))
 	{
 		return 0;
 	}
@@ -1920,15 +1920,15 @@ int func_50(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return Global_1686501.f_1;
+			return Global_1686502.f_1;
 			break;
 		
 		case 1:
-			return Global_1686501.f_2;
+			return Global_1686502.f_2;
 			break;
 		
 		case 2:
-			return Global_1686501.f_3;
+			return Global_1686502.f_3;
 			break;
 	}
 	return 0;
@@ -1982,15 +1982,15 @@ int func_52(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return Global_1686509;
-			break;
-		
-		case 1:
 			return Global_1686510;
 			break;
 		
-		case 2:
+		case 1:
 			return Global_1686511;
+			break;
+		
+		case 2:
+			return Global_1686512;
 			break;
 	}
 	return 0;

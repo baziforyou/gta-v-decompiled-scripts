@@ -35534,11 +35534,11 @@ bool func_228(int iParam0, int iParam1)
 		case 5:
 			if (iParam1 > -1)
 			{
-				return Global_1673654.f_203[iParam1];
+				return Global_1673655.f_203[iParam1];
 			}
 			break;
 	}
-	return BitTest(Global_1673654.f_1048, iParam0);
+	return BitTest(Global_1673655.f_1048, iParam0);
 }
 
 void func_229()
@@ -40025,7 +40025,7 @@ int func_325(int iParam0)
 
 void func_326(int iParam0)
 {
-	Global_1577950 = iParam0;
+	Global_1577951 = iParam0;
 }
 
 int func_327()
@@ -49813,7 +49813,7 @@ int func_478(int iParam0)
 				{
 					if (func_480() != -1 && func_480() < 547)
 					{
-						if (!func_479(iParam0) || ENTITY::GET_ENTITY_MODEL(iParam0) != Global_1586535[func_480() /*143*/].f_66)
+						if (!func_479(iParam0) || ENTITY::GET_ENTITY_MODEL(iParam0) != Global_1586536[func_480() /*143*/].f_66)
 						{
 							return 1;
 						}
@@ -50372,7 +50372,7 @@ int func_496(int iParam0, int iParam1)
 	}
 	if ((!Global_2707692 && iParam1 >= 0) && iParam1 <= 547)
 	{
-		if (BitTest(Global_1586535[iParam1 /*143*/].f_104, 2))
+		if (BitTest(Global_1586536[iParam1 /*143*/].f_104, 2))
 		{
 			return 1;
 		}

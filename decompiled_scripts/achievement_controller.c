@@ -9223,7 +9223,7 @@ bool func_42()
 
 bool func_43()
 {
-	return Global_1586535[189 /*143*/].f_66 == joaat("thruster");
+	return Global_1586536[189 /*143*/].f_66 == joaat("thruster");
 }
 
 int func_44()

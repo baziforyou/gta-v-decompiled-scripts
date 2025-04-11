@@ -3626,7 +3626,7 @@ int func_47(int iParam0)
 				{
 					if (func_49() != -1 && func_49() < 547)
 					{
-						if (!func_48(iParam0) || ENTITY::GET_ENTITY_MODEL(iParam0) != Global_1586535[func_49() /*143*/].f_66)
+						if (!func_48(iParam0) || ENTITY::GET_ENTITY_MODEL(iParam0) != Global_1586536[func_49() /*143*/].f_66)
 						{
 							return 1;
 						}
@@ -4415,7 +4415,7 @@ int func_70(int iParam0, int iParam1)
 	}
 	if ((!Global_2707692 && iParam1 >= 0) && iParam1 <= 547)
 	{
-		if (BitTest(Global_1586535[iParam1 /*143*/].f_104, 2))
+		if (BitTest(Global_1586536[iParam1 /*143*/].f_104, 2))
 		{
 			return 1;
 		}

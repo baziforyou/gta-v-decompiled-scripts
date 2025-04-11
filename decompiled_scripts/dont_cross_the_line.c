@@ -2574,8 +2574,8 @@ int func_73(int iParam0)
 		func_74(iParam0, 1);
 		return 0;
 	}
-	Global_1686278[iVar0 /*5*/].f_4 = 1;
-	return Global_1686278[iVar0 /*5*/].f_2;
+	Global_1686279[iVar0 /*5*/].f_4 = 1;
+	return Global_1686279[iVar0 /*5*/].f_2;
 }
 
 void func_74(int iParam0, bool bParam1)
@@ -2588,9 +2588,9 @@ void func_74(int iParam0, bool bParam1)
 	{
 		return;
 	}
-	if (Global_1686441)
+	if (Global_1686442)
 	{
-		if (iParam0 == Global_1686441.f_1)
+		if (iParam0 == Global_1686442.f_1)
 		{
 			return;
 		}
@@ -2599,12 +2599,12 @@ void func_74(int iParam0, bool bParam1)
 	{
 		return;
 	}
-	if (Global_1686479 >= 32)
+	if (Global_1686480 >= 32)
 	{
 		return;
 	}
-	Global_1686446[Global_1686479] = iParam0;
-	Global_1686479++;
+	Global_1686447[Global_1686480] = iParam0;
+	Global_1686480++;
 	if (bParam1)
 	{
 	}
@@ -2616,9 +2616,9 @@ int func_75(int iParam0)
 	
 	iVar0 = 0;
 	iVar0 = 0;
-	while (iVar0 < Global_1686479)
+	while (iVar0 < Global_1686480)
 	{
-		if (Global_1686446[iVar0] == iParam0)
+		if (Global_1686447[iVar0] == iParam0)
 		{
 			return 1;
 		}
@@ -2635,17 +2635,17 @@ int func_76(int iParam0)
 	{
 		return -1;
 	}
-	if (Global_1686439 == 0)
+	if (Global_1686440 == 0)
 	{
 		return -1;
 	}
 	iVar0 = 0;
 	iVar0 = 0;
-	while (iVar0 < Global_1686439)
+	while (iVar0 < Global_1686440)
 	{
-		if (Global_1686278[iVar0 /*5*/].f_1 == iParam0)
+		if (Global_1686279[iVar0 /*5*/].f_1 == iParam0)
 		{
-			if (PED::IS_PEDHEADSHOT_VALID(Global_1686278[iVar0 /*5*/].f_2) && PED::IS_PEDHEADSHOT_READY(Global_1686278[iVar0 /*5*/].f_2))
+			if (PED::IS_PEDHEADSHOT_VALID(Global_1686279[iVar0 /*5*/].f_2) && PED::IS_PEDHEADSHOT_READY(Global_1686279[iVar0 /*5*/].f_2))
 			{
 				return iVar0;
 			}
@@ -2664,30 +2664,30 @@ void func_77(int iParam0)
 	int iVar32;
 	int iVar33;
 	
-	if (iParam0 >= Global_1686439)
+	if (iParam0 >= Global_1686440)
 	{
 		return;
 	}
-	if (PED::IS_PEDHEADSHOT_VALID(Global_1686278[iParam0 /*5*/].f_2))
+	if (PED::IS_PEDHEADSHOT_VALID(Global_1686279[iParam0 /*5*/].f_2))
 	{
 		StringCopy(&cVar0, "CHAR_DEFAULT", 64);
-		if (Global_1686278[iParam0 /*5*/].f_2 != 0)
+		if (Global_1686279[iParam0 /*5*/].f_2 != 0)
 		{
-			StringCopy(&cVar16, PED::GET_PEDHEADSHOT_TXD_STRING(Global_1686278[iParam0 /*5*/].f_2), 64);
+			StringCopy(&cVar16, PED::GET_PEDHEADSHOT_TXD_STRING(Global_1686279[iParam0 /*5*/].f_2), 64);
 			HUD::THEFEED_UPDATE_ITEM_TEXTURE(&cVar16, &cVar16, &cVar0, &cVar0);
 		}
-		PED::UNREGISTER_PEDHEADSHOT(Global_1686278[iParam0 /*5*/].f_2);
+		PED::UNREGISTER_PEDHEADSHOT(Global_1686279[iParam0 /*5*/].f_2);
 	}
 	iVar32 = iParam0;
 	iVar33 = iVar32 + 1;
-	while (iVar33 < Global_1686439)
+	while (iVar33 < Global_1686440)
 	{
-		Global_1686278[iVar32 /*5*/] = { Global_1686278[iVar33 /*5*/] };
+		Global_1686279[iVar32 /*5*/] = { Global_1686279[iVar33 /*5*/] };
 		iVar32++;
 		iVar33++;
 	}
-	func_78(&(Global_1686278[iVar32 /*5*/]));
-	Global_1686439 = (Global_1686439 - 1);
+	func_78(&(Global_1686279[iVar32 /*5*/]));
+	Global_1686440 = (Global_1686440 - 1);
 }
 
 void func_78(var uParam0)
@@ -2932,9 +2932,9 @@ void func_89(int iParam0, bool bParam1, int iParam2, bool bParam3, int iParam4, 
 		{
 			func_103(iParam0, 1, iParam5);
 		}
-		if (Global_1673654.f_1043 == 0)
+		if (Global_1673655.f_1043 == 0)
 		{
-			Global_1673654.f_1044 = iParam0;
+			Global_1673655.f_1044 = iParam0;
 		}
 	}
 	else
@@ -3687,15 +3687,15 @@ void func_109(int iParam0, char* sParam1, char* sParam2, char* sParam3, char* sP
 {
 	int iVar0;
 	
-	iVar0 = func_110(&Global_1682341);
-	Global_1682341[iVar0 /*106*/] = iParam0;
-	StringCopy(&(Global_1682341[iVar0 /*106*/].f_17), sParam3, 64);
-	StringCopy(&(Global_1682341[iVar0 /*106*/].f_1), sParam4, 64);
-	StringCopy(&(Global_1682341[iVar0 /*106*/].f_33), sParam1, 64);
-	StringCopy(&(Global_1682341[iVar0 /*106*/].f_49), sParam2, 64);
-	Global_1682341[iVar0 /*106*/].f_97 = iParam5;
-	Global_1682341[iVar0 /*106*/].f_104 = iParam9;
-	Global_1682341[iVar0 /*106*/].f_105 = iParam10;
+	iVar0 = func_110(&Global_1682342);
+	Global_1682342[iVar0 /*106*/] = iParam0;
+	StringCopy(&(Global_1682342[iVar0 /*106*/].f_17), sParam3, 64);
+	StringCopy(&(Global_1682342[iVar0 /*106*/].f_1), sParam4, 64);
+	StringCopy(&(Global_1682342[iVar0 /*106*/].f_33), sParam1, 64);
+	StringCopy(&(Global_1682342[iVar0 /*106*/].f_49), sParam2, 64);
+	Global_1682342[iVar0 /*106*/].f_97 = iParam5;
+	Global_1682342[iVar0 /*106*/].f_104 = iParam9;
+	Global_1682342[iVar0 /*106*/].f_105 = iParam10;
 	if (iParam6 != 0)
 	{
 	}
@@ -3704,7 +3704,7 @@ void func_109(int iParam0, char* sParam1, char* sParam2, char* sParam3, char* sP
 	}
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam8))
 	{
-		StringCopy(&(Global_1682341[iVar0 /*106*/].f_98), sParam8, 24);
+		StringCopy(&(Global_1682342[iVar0 /*106*/].f_98), sParam8, 24);
 	}
 }
 
@@ -7843,13 +7843,13 @@ void func_208()
 
 void func_209(bool bParam0, int iParam1)
 {
-	MISC::SET_BIT(&(Global_1673654.f_1047), iParam0);
+	MISC::SET_BIT(&(Global_1673655.f_1047), iParam0);
 	switch (bParam0)
 	{
 		case 5:
 			if (iParam1 > -1)
 			{
-				Global_1673654.f_170[iParam1] = 1;
+				Global_1673655.f_170[iParam1] = 1;
 			}
 			break;
 	}
@@ -7857,7 +7857,7 @@ void func_209(bool bParam0, int iParam1)
 
 void func_210(int iParam0)
 {
-	Global_1675211.f_1163 = iParam0;
+	Global_1675212.f_1163 = iParam0;
 }
 
 void func_211()

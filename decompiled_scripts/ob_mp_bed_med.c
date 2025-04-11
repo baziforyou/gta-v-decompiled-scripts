@@ -877,13 +877,13 @@ void func_12(bool bParam0)
 
 void func_13(int iParam0, int iParam1)
 {
-	MISC::SET_BIT(&(Global_1673654.f_1047), iParam0);
+	MISC::SET_BIT(&(Global_1673655.f_1047), iParam0);
 	switch (iParam0)
 	{
 		case 5:
 			if (iParam1 > -1)
 			{
-				Global_1673654.f_170[iParam1] = 1;
+				Global_1673655.f_170[iParam1] = 1;
 			}
 			break;
 	}
@@ -1824,7 +1824,7 @@ void func_46(int iParam0, int iParam1, char* sParam2, int iParam3, char* sParam4
 
 bool func_47(int iParam0)
 {
-	return BitTest(Global_1673654.f_241.f_136[func_49(9) /*33*/][iParam0], func_48(9));
+	return BitTest(Global_1673655.f_241.f_136[func_49(9) /*33*/][iParam0], func_48(9));
 }
 
 int func_48(int iParam0)

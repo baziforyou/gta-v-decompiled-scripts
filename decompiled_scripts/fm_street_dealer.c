@@ -572,7 +572,7 @@ int func_9(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 	int iVar0;
 	int iVar1;
 	
-	if (!BitTest(Global_1686501, 0))
+	if (!BitTest(Global_1686502, 0))
 	{
 		return 0;
 	}
@@ -642,15 +642,15 @@ int func_11(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return Global_1686501.f_1;
+			return Global_1686502.f_1;
 			break;
 		
 		case 1:
-			return Global_1686501.f_2;
+			return Global_1686502.f_2;
 			break;
 		
 		case 2:
-			return Global_1686501.f_3;
+			return Global_1686502.f_3;
 			break;
 	}
 	return 0;
@@ -704,15 +704,15 @@ int func_13(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return Global_1686509;
-			break;
-		
-		case 1:
 			return Global_1686510;
 			break;
 		
-		case 2:
+		case 1:
 			return Global_1686511;
+			break;
+		
+		case 2:
+			return Global_1686512;
 			break;
 	}
 	return 0;
@@ -2827,7 +2827,7 @@ void func_30(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 
 void func_31(int iParam0)
 {
-	Global_1675211.f_1163 = iParam0;
+	Global_1675212.f_1163 = iParam0;
 }
 
 float func_32(int iParam0)
@@ -4236,11 +4236,11 @@ var func_68(int iParam0, int iParam1)
 		case 5:
 			if (iParam1 > -1)
 			{
-				return Global_1673654.f_203[iParam1];
+				return Global_1673655.f_203[iParam1];
 			}
 			break;
 	}
-	return BitTest(Global_1673654.f_1048, iParam0);
+	return BitTest(Global_1673655.f_1048, iParam0);
 }
 
 int func_69(var uParam0, bool bParam1, int iParam2)
@@ -4864,7 +4864,7 @@ int func_86(int iParam0)
 					if (func_84(iVar1) == func_85(iParam0) && func_90(PLAYER::PLAYER_ID(), iVar1))
 					{
 						iVar2 = func_89(PLAYER::PLAYER_ID(), iVar1);
-						if (Global_1845221[PLAYER::PLAYER_ID() /*889*/].f_268.f_199[iVar2 /*13*/].f_7 || Global_1668003[iVar2] != 0)
+						if (Global_1845221[PLAYER::PLAYER_ID() /*889*/].f_268.f_199[iVar2 /*13*/].f_7 || Global_1668004[iVar2] != 0)
 						{
 							return Global_1845221[PLAYER::PLAYER_ID() /*889*/].f_268.f_199[iVar2 /*13*/].f_4 > 0;
 						}

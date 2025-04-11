@@ -1673,7 +1673,7 @@ void func_21(var uParam0, var uParam1, struct<3> Param2, int iParam5, int iParam
 			return;
 		}
 	}
-	iVar2 = Global_1685085;
+	iVar2 = Global_1685086;
 	if (iVar2 >= 12)
 	{
 		iVar2 = (iVar2 - 1);
@@ -1685,10 +1685,10 @@ void func_21(var uParam0, var uParam1, struct<3> Param2, int iParam5, int iParam
 		iVar2 = (iVar2 - 1);
 		iVar3 = (iVar3 - 1);
 	}
-	Global_1685085++;
-	if (Global_1685085 > 12)
+	Global_1685086++;
+	if (Global_1685086 > 12)
 	{
-		Global_1685085 = 12;
+		Global_1685086 = 12;
 	}
 	iVar4 = 0;
 	Global_2622484[iVar4 /*80*/] = 0;
@@ -1818,7 +1818,7 @@ bool func_23()
 
 void func_24()
 {
-	Global_1685088 = NETWORK::GET_TIME_OFFSET(NETWORK::GET_NETWORK_TIME(), 30000);
+	Global_1685089 = NETWORK::GET_TIME_OFFSET(NETWORK::GET_NETWORK_TIME(), 30000);
 }
 
 bool func_25(bool bParam0)
@@ -1855,14 +1855,14 @@ int func_27(int iParam0)
 	int iVar0;
 	bool bVar1;
 	
-	if (Global_1685085 == 0)
+	if (Global_1685086 == 0)
 	{
 		return 0;
 	}
 	iVar0 = 0;
 	bVar1 = false;
 	iVar0 = 0;
-	while (iVar0 < Global_1685085)
+	while (iVar0 < Global_1685086)
 	{
 		if (!func_30(iVar0))
 		{
@@ -2902,7 +2902,7 @@ void func_47(int iParam0, bool bParam1)
 	int iVar1;
 	int iVar2;
 	
-	if (iParam0 >= Global_1685085)
+	if (iParam0 >= Global_1685086)
 	{
 		return;
 	}
@@ -2944,17 +2944,17 @@ void func_47(int iParam0, bool bParam1)
 	}
 	iVar1 = iParam0;
 	iVar2 = iVar1 + 1;
-	while (iVar2 < Global_1685085)
+	while (iVar2 < Global_1685086)
 	{
 		Global_2622484[iVar1 /*80*/] = { Global_2622484[iVar2 /*80*/] };
 		iVar1++;
 		iVar2++;
 	}
 	func_49(iVar1);
-	Global_1685085 = (Global_1685085 - 1);
-	if (Global_1685086)
+	Global_1685086 = (Global_1685086 - 1);
+	if (Global_1685087)
 	{
-		if (Global_1685084 > 0)
+		if (Global_1685085 > 0)
 		{
 			func_48();
 		}
@@ -2963,7 +2963,7 @@ void func_47(int iParam0, bool bParam1)
 
 void func_48()
 {
-	Global_1685086 = 0;
+	Global_1685087 = 0;
 }
 
 void func_49(int iParam0)
@@ -3017,7 +3017,7 @@ int func_50(int iParam0, char* sParam1, bool bParam2)
 	
 	iVar0 = 0;
 	iVar0 = 0;
-	while (iVar0 < Global_1685085)
+	while (iVar0 < Global_1685086)
 	{
 		if (!Global_2622484[iVar0 /*80*/].f_11)
 		{
@@ -5460,7 +5460,7 @@ int func_158(int iParam0, int iParam1, int iParam2)
 	{
 		return 0;
 	}
-	return BitTest(Global_1669030[iVar0 /*6*/], iParam0);
+	return BitTest(Global_1669031[iVar0 /*6*/], iParam0);
 }
 
 int func_159(int iParam0, int iParam1)
@@ -5471,13 +5471,13 @@ int func_159(int iParam0, int iParam1)
 	}
 	else if (iParam1 < 0)
 	{
-		return Global_1669812[iParam0 /*6*/].f_2;
+		return Global_1669813[iParam0 /*6*/].f_2;
 	}
-	else if (iParam1 >= Global_1669812[iParam0 /*6*/].f_1)
+	else if (iParam1 >= Global_1669813[iParam0 /*6*/].f_1)
 	{
-		return Global_1669812[iParam0 /*6*/].f_2;
+		return Global_1669813[iParam0 /*6*/].f_2;
 	}
-	return (Global_1669812[iParam0 /*6*/].f_2 + iParam1);
+	return (Global_1669813[iParam0 /*6*/].f_2 + iParam1);
 }
 
 bool func_160(int iParam0)
@@ -11471,11 +11471,11 @@ bool func_349(int iParam0, int iParam1)
 		case 5:
 			if (iParam1 > -1)
 			{
-				return Global_1673654.f_203[iParam1];
+				return Global_1673655.f_203[iParam1];
 			}
 			break;
 	}
-	return BitTest(Global_1673654.f_1048, iParam0);
+	return BitTest(Global_1673655.f_1048, iParam0);
 }
 
 void func_350()

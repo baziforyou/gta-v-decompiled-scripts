@@ -1132,11 +1132,11 @@ bool func_23(int iParam0, int iParam1)
 		case 5:
 			if (iParam1 > -1)
 			{
-				return Global_1673654.f_203[iParam1];
+				return Global_1673655.f_203[iParam1];
 			}
 			break;
 	}
-	return BitTest(Global_1673654.f_1048, iParam0);
+	return BitTest(Global_1673655.f_1048, iParam0);
 }
 
 void func_24()
@@ -40069,7 +40069,7 @@ void func_343(var uParam0, int iParam1, struct<3> Param2, int iParam5)
 	int iVar3;
 	int iVar4;
 	
-	if (Global_1582035 == 1)
+	if (Global_1582036 == 1)
 	{
 		return;
 	}
@@ -44185,7 +44185,7 @@ int func_422(int iParam0, int iParam1)
 	}
 	if ((!Global_2707692 && iParam1 >= 0) && iParam1 <= 547)
 	{
-		if (BitTest(Global_1586535[iParam1 /*143*/].f_104, 2))
+		if (BitTest(Global_1586536[iParam1 /*143*/].f_104, 2))
 		{
 			return 1;
 		}
@@ -50963,7 +50963,7 @@ int func_563(int iParam0)
 				{
 					if (func_565() != -1 && func_565() < 547)
 					{
-						if (!func_564(iParam0) || ENTITY::GET_ENTITY_MODEL(iParam0) != Global_1586535[func_565() /*143*/].f_66)
+						if (!func_564(iParam0) || ENTITY::GET_ENTITY_MODEL(iParam0) != Global_1586536[func_565() /*143*/].f_66)
 						{
 							return 1;
 						}

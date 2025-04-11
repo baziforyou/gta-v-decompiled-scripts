@@ -2357,37 +2357,37 @@ void func_42(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 	}
 	if (iVar0 > -1)
 	{
-		Global_1675211.f_1 = 1;
+		Global_1675212.f_1 = 1;
 		func_43(7, iVar0);
-		Global_1675211.f_4714[iVar0] = iParam0;
-		StringCopy(&(Global_1675211.f_4714.f_11[iVar0 /*16*/]), sParam1, 64);
-		Global_1675211.f_4714.f_172[iVar0] = iParam2;
-		Global_1675211.f_4714.f_216[iVar0] = iParam3;
-		Global_1675211.f_4714.f_183[iVar0] = iParam4;
-		Global_1675211.f_4714.f_194[iVar0] = iParam5;
-		Global_1675211.f_4714.f_249[iVar0] = iParam6;
-		Global_1675211.f_4714.f_260[iVar0] = iParam7;
-		Global_1675211.f_4714.f_205[iVar0] = iParam8;
-		Global_1675211.f_4714.f_314[iVar0] = iParam9;
-		Global_1675211.f_4714.f_325[iVar0] = iParam10;
-		Global_1675211.f_4714.f_357[iVar0] = iParam11;
-		Global_1675211.f_4714.f_238[iVar0] = iParam12;
-		Global_1675211.f_4714.f_271[iVar0] = iParam13;
-		Global_1675211.f_4714.f_368[iVar0] = iParam14;
-		Global_1675211.f_4714.f_379[iVar0] = iParam15;
-		Global_1675211.f_4714.f_390[iVar0] = iParam16;
-		Global_1675211.f_4714.f_227[iVar0] = iParam17;
+		Global_1675212.f_4714[iVar0] = iParam0;
+		StringCopy(&(Global_1675212.f_4714.f_11[iVar0 /*16*/]), sParam1, 64);
+		Global_1675212.f_4714.f_172[iVar0] = iParam2;
+		Global_1675212.f_4714.f_216[iVar0] = iParam3;
+		Global_1675212.f_4714.f_183[iVar0] = iParam4;
+		Global_1675212.f_4714.f_194[iVar0] = iParam5;
+		Global_1675212.f_4714.f_249[iVar0] = iParam6;
+		Global_1675212.f_4714.f_260[iVar0] = iParam7;
+		Global_1675212.f_4714.f_205[iVar0] = iParam8;
+		Global_1675212.f_4714.f_314[iVar0] = iParam9;
+		Global_1675212.f_4714.f_325[iVar0] = iParam10;
+		Global_1675212.f_4714.f_357[iVar0] = iParam11;
+		Global_1675212.f_4714.f_238[iVar0] = iParam12;
+		Global_1675212.f_4714.f_271[iVar0] = iParam13;
+		Global_1675212.f_4714.f_368[iVar0] = iParam14;
+		Global_1675212.f_4714.f_379[iVar0] = iParam15;
+		Global_1675212.f_4714.f_390[iVar0] = iParam16;
+		Global_1675212.f_4714.f_227[iVar0] = iParam17;
 	}
 }
 
 void func_43(int iParam0, int iParam1)
 {
-	MISC::SET_BIT(&(Global_1675211.f_7064[iParam0]), iParam1);
+	MISC::SET_BIT(&(Global_1675212.f_7064[iParam0]), iParam1);
 }
 
 int func_44(int iParam0, int iParam1)
 {
-	return BitTest(Global_1675211.f_7064[iParam0], iParam1);
+	return BitTest(Global_1675212.f_7064[iParam0], iParam1);
 }
 
 float func_45(char* sParam0, char* sParam1)

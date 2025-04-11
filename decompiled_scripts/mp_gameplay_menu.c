@@ -605,7 +605,7 @@ void func_22(var uParam0, var uParam1, var uParam2, int iParam3)
 		}
 		func_28(uParam2);
 	}
-	if (Global_1577950 < 2)
+	if (Global_1577951 < 2)
 	{
 		func_27(1);
 	}
@@ -782,7 +782,7 @@ void func_26(char* sParam0)
 
 void func_27(int iParam0)
 {
-	Global_1577950 = iParam0;
+	Global_1577951 = iParam0;
 }
 
 void func_28(var uParam0)
@@ -798,7 +798,7 @@ int func_29(var uParam0)
 
 void func_30(int iParam0)
 {
-	Global_1675211.f_1163 = iParam0;
+	Global_1675212.f_1163 = iParam0;
 }
 
 int func_31(var uParam0, char* sParam1)
@@ -1106,11 +1106,11 @@ var func_41(int iParam0, int iParam1)
 		case 5:
 			if (iParam1 > -1)
 			{
-				return Global_1673654.f_203[iParam1];
+				return Global_1673655.f_203[iParam1];
 			}
 			break;
 	}
-	return BitTest(Global_1673654.f_1048, iParam0);
+	return BitTest(Global_1673655.f_1048, iParam0);
 }
 
 void func_42(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4, float fParam5, bool bParam6, bool bParam7, int iParam8)

@@ -957,7 +957,7 @@ int func_15(int iParam0, int iParam1, int iParam2)
 		func_23(9, iParam2);
 		return 1;
 	}
-	if (Global_1668022[iParam1] >= Global_262145.f_18233)
+	if (Global_1668023[iParam1] >= Global_262145.f_18233)
 	{
 		func_23(10, iParam2);
 		return 1;
@@ -978,7 +978,7 @@ int func_15(int iParam0, int iParam1, int iParam2)
 
 bool func_16(int iParam0)
 {
-	return Global_1667995[iParam0] != 0;
+	return Global_1667996[iParam0] != 0;
 }
 
 int func_17(int iParam0, int iParam1)
@@ -1069,7 +1069,7 @@ void func_23(int iParam0, int iParam1)
 
 bool func_24(int iParam0)
 {
-	return Global_1668003[iParam0] != 0;
+	return Global_1668004[iParam0] != 0;
 }
 
 int func_25(int iParam0, int iParam1)
@@ -1384,7 +1384,7 @@ void func_38(int iParam0)
 		{
 			func_220();
 		}
-		else if (Global_1668022[func_219(iLocal_323)] >= Global_262145.f_18233)
+		else if (Global_1668023[func_219(iLocal_323)] >= Global_262145.f_18233)
 		{
 			func_220();
 		}
@@ -3061,7 +3061,7 @@ int func_82(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 	int iVar0;
 	int iVar1;
 	
-	if (!BitTest(Global_1686501, 0))
+	if (!BitTest(Global_1686502, 0))
 	{
 		return 0;
 	}
@@ -3131,15 +3131,15 @@ int func_84(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return Global_1686501.f_1;
+			return Global_1686502.f_1;
 			break;
 		
 		case 1:
-			return Global_1686501.f_2;
+			return Global_1686502.f_2;
 			break;
 		
 		case 2:
-			return Global_1686501.f_3;
+			return Global_1686502.f_3;
 			break;
 	}
 	return 0;
@@ -3193,15 +3193,15 @@ int func_86(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return Global_1686509;
-			break;
-		
-		case 1:
 			return Global_1686510;
 			break;
 		
-		case 2:
+		case 1:
 			return Global_1686511;
+			break;
+		
+		case 2:
+			return Global_1686512;
 			break;
 	}
 	return 0;
@@ -11060,7 +11060,7 @@ void func_222()
 	{
 		func_372("HT_GR_P1", "OR_RESUP_RES", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
 	}
-	else if (Global_1668022[5] >= Global_262145.f_18233)
+	else if (Global_1668023[5] >= Global_262145.f_18233)
 	{
 		func_372("HT_GR_P1", "OR_MIS_NA_B", "OR_OVRLY_OK", "", 1, 0, 0, -1, -1, 0, 0);
 	}
@@ -18427,13 +18427,13 @@ void func_482(bool bParam0)
 
 void func_483(bool bParam0, int iParam1)
 {
-	MISC::SET_BIT(&(Global_1673654.f_1047), iParam0);
+	MISC::SET_BIT(&(Global_1673655.f_1047), iParam0);
 	switch (bParam0)
 	{
 		case 5:
 			if (iParam1 > -1)
 			{
-				Global_1673654.f_170[iParam1] = 1;
+				Global_1673655.f_170[iParam1] = 1;
 			}
 			break;
 	}
@@ -18818,7 +18818,7 @@ int func_504(int iParam0)
 					if (func_28(iVar1) == func_505(iParam0) && func_22(PLAYER::PLAYER_ID(), iVar1))
 					{
 						iVar2 = func_20(PLAYER::PLAYER_ID(), iVar1);
-						if (Global_1845221[PLAYER::PLAYER_ID() /*889*/].f_268.f_199[iVar2 /*13*/].f_7 || Global_1668003[iVar2] != 0)
+						if (Global_1845221[PLAYER::PLAYER_ID() /*889*/].f_268.f_199[iVar2 /*13*/].f_7 || Global_1668004[iVar2] != 0)
 						{
 							return Global_1845221[PLAYER::PLAYER_ID() /*889*/].f_268.f_199[iVar2 /*13*/].f_4 > 0;
 						}
@@ -19702,11 +19702,11 @@ bool func_532(int iParam0, int iParam1)
 		case 5:
 			if (iParam1 > -1)
 			{
-				return Global_1673654.f_203[iParam1];
+				return Global_1673655.f_203[iParam1];
 			}
 			break;
 	}
-	return BitTest(Global_1673654.f_1048, iParam0);
+	return BitTest(Global_1673655.f_1048, iParam0);
 }
 
 void func_533()

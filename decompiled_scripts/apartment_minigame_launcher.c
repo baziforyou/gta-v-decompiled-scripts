@@ -3991,7 +3991,7 @@ void func_52(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 
 void func_53(int iParam0)
 {
-	Global_1675211.f_1163 = iParam0;
+	Global_1675212.f_1163 = iParam0;
 }
 
 float func_54(int iParam0)
@@ -5384,11 +5384,11 @@ var func_89(int iParam0, int iParam1)
 		case 5:
 			if (iParam1 > -1)
 			{
-				return Global_1673654.f_203[iParam1];
+				return Global_1673655.f_203[iParam1];
 			}
 			break;
 	}
-	return BitTest(Global_1673654.f_1048, iParam0);
+	return BitTest(Global_1673655.f_1048, iParam0);
 }
 
 int func_90(var uParam0, bool bParam1, int iParam2)

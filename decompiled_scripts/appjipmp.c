@@ -11282,7 +11282,7 @@ int func_345(int iParam0, int iParam1, int iParam2)
 
 bool func_346(int iParam0)
 {
-	return Global_1575112[iParam0 + 1];
+	return Global_1575113[iParam0 + 1];
 }
 
 int func_347(int iParam0)

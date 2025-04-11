@@ -1014,12 +1014,12 @@ void func_31(var uParam0, char* sParam1, var uParam2, bool bParam3, char* sParam
 
 void func_32(int iParam0, int iParam1)
 {
-	Global_1668409.f_59[iParam0 /*16*/].f_15 = iParam1;
+	Global_1668410.f_59[iParam0 /*16*/].f_15 = iParam1;
 }
 
 void func_33(int iParam0, char* sParam1, bool bParam2)
 {
-	StringCopy(&(Global_1668409.f_59[iParam0 /*16*/].f_7), sParam1, 32);
+	StringCopy(&(Global_1668410.f_59[iParam0 /*16*/].f_7), sParam1, 32);
 	if (!bParam2)
 	{
 		return;
@@ -1029,12 +1029,12 @@ void func_33(int iParam0, char* sParam1, bool bParam2)
 
 void func_34(int iParam0)
 {
-	MISC::SET_BIT(&(Global_1668409.f_59[iParam0 /*16*/]), 5);
+	MISC::SET_BIT(&(Global_1668410.f_59[iParam0 /*16*/]), 5);
 }
 
 void func_35(int iParam0)
 {
-	MISC::SET_BIT(&(Global_1668409.f_59[iParam0 /*16*/]), 4);
+	MISC::SET_BIT(&(Global_1668410.f_59[iParam0 /*16*/]), 4);
 }
 
 void func_36(int iParam0, char* sParam1)
@@ -1042,32 +1042,32 @@ void func_36(int iParam0, char* sParam1)
 	struct<4> Var0;
 	
 	StringCopy(&Var0, sParam1, 16);
-	Global_1668409.f_59[iParam0 /*16*/].f_3 = { Var0 };
+	Global_1668410.f_59[iParam0 /*16*/].f_3 = { Var0 };
 }
 
 void func_37(int iParam0, var uParam1, bool bParam2)
 {
-	Global_1668409.f_59[iParam0 /*16*/].f_2 = uParam1;
+	Global_1668410.f_59[iParam0 /*16*/].f_2 = uParam1;
 	if (bParam2)
 	{
-		MISC::SET_BIT(&(Global_1668409.f_59[iParam0 /*16*/]), 2);
-		MISC::CLEAR_BIT(&(Global_1668409.f_59[iParam0 /*16*/]), 3);
+		MISC::SET_BIT(&(Global_1668410.f_59[iParam0 /*16*/]), 2);
+		MISC::CLEAR_BIT(&(Global_1668410.f_59[iParam0 /*16*/]), 3);
 	}
 	else
 	{
-		MISC::SET_BIT(&(Global_1668409.f_59[iParam0 /*16*/]), 3);
-		MISC::CLEAR_BIT(&(Global_1668409.f_59[iParam0 /*16*/]), 2);
+		MISC::SET_BIT(&(Global_1668410.f_59[iParam0 /*16*/]), 3);
+		MISC::CLEAR_BIT(&(Global_1668410.f_59[iParam0 /*16*/]), 2);
 	}
 }
 
 void func_38(int iParam0, var uParam1)
 {
-	Global_1668409.f_59[iParam0 /*16*/].f_1 = uParam1;
+	Global_1668410.f_59[iParam0 /*16*/].f_1 = uParam1;
 }
 
 void func_39(int iParam0)
 {
-	MISC::SET_BIT(&(Global_1668409.f_59[iParam0 /*16*/]), false);
+	MISC::SET_BIT(&(Global_1668410.f_59[iParam0 /*16*/]), false);
 }
 
 int func_40()
@@ -1089,7 +1089,7 @@ int func_40()
 
 bool func_41(int iParam0)
 {
-	return BitTest(Global_1668409.f_59[iParam0 /*16*/], 0);
+	return BitTest(Global_1668410.f_59[iParam0 /*16*/], 0);
 }
 
 int func_42()
@@ -2239,7 +2239,7 @@ int func_79(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		return 3;
 	}
 	iVar0 = PLAYER::GET_PLAYER_TEAM(iParam0);
-	if ((func_92() || (func_91() && func_89())) && Global_1685172.f_1)
+	if ((func_92() || (func_91() && func_89())) && Global_1685173.f_1)
 	{
 		if (bParam1)
 		{

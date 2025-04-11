@@ -1983,7 +1983,7 @@ void func_9(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4,
 
 void func_10(int iParam0)
 {
-	Global_1675211.f_1163 = iParam0;
+	Global_1675212.f_1163 = iParam0;
 }
 
 float func_11(int iParam0)
@@ -3392,11 +3392,11 @@ bool func_47(int iParam0, int iParam1)
 		case 5:
 			if (iParam1 > -1)
 			{
-				return Global_1673654.f_203[iParam1];
+				return Global_1673655.f_203[iParam1];
 			}
 			break;
 	}
-	return BitTest(Global_1673654.f_1048, iParam0);
+	return BitTest(Global_1673655.f_1048, iParam0);
 }
 
 int func_48(var uParam0, bool bParam1, int iParam2)
@@ -3882,13 +3882,13 @@ int func_65()
 						iVar15 = func_128(iVar2);
 						if (((func_127(iVar2) && iVar15 != 2) && iVar15 != 3) && func_124(iVar2))
 						{
-							if (BitTest(Global_1586535[iVar1 /*143*/].f_104, 10))
+							if (BitTest(Global_1586536[iVar1 /*143*/].f_104, 10))
 							{
 								bVar9 = true;
 								bVar10 = false;
 								iVar14 = 3;
 							}
-							else if (BitTest(Global_1586535[iVar1 /*143*/].f_104, 1))
+							else if (BitTest(Global_1586536[iVar1 /*143*/].f_104, 1))
 							{
 								bVar9 = true;
 								bVar10 = false;
@@ -3912,7 +3912,7 @@ int func_65()
 					{
 						iLocal_76 = iVar14;
 					}
-					if (BitTest(Global_1586535[iVar1 /*143*/].f_104, 1))
+					if (BitTest(Global_1586536[iVar1 /*143*/].f_104, 1))
 					{
 						StringCopy(&Var3, "MP_MAN_VEH_S01", 24);
 					}
@@ -4180,9 +4180,9 @@ void func_69(int iParam0, int iParam1, int iParam2)
 		func_117(iVar0, -1, iParam2);
 	}
 	func_105(iParam0, iParam1);
-	func_102(&(Global_1586535[iParam0 /*143*/]));
+	func_102(&(Global_1586536[iParam0 /*143*/]));
 	Global_2359296[func_101() /*5571*/].f_681.f_1275 = NETWORK::GET_CLOUD_TIME_AS_INT();
-	func_70(iParam0, &(Global_1586535[iParam0 /*143*/]), 0, iParam2, 0, 0);
+	func_70(iParam0, &(Global_1586536[iParam0 /*143*/]), 0, iParam2, 0, 0);
 }
 
 int func_70(int iParam0, var uParam1, bool bParam2, int iParam3, bool bParam4, bool bParam5)
@@ -16486,7 +16486,7 @@ void func_105(int iParam0, int iParam1)
 		{
 			iVar2 = -1;
 		}
-		STATS::PLAYSTATS_VEH_DEL(iVar0, iVar1, iVar2, Global_1586535[iParam0 /*143*/].f_66, iVar3);
+		STATS::PLAYSTATS_VEH_DEL(iVar0, iVar1, iVar2, Global_1586536[iParam0 /*143*/].f_66, iVar3);
 	}
 }
 
@@ -17192,7 +17192,7 @@ int func_132(int iParam0, int iParam1)
 	}
 	if ((!Global_2707692 && iParam1 >= 0) && iParam1 <= 547)
 	{
-		if (BitTest(Global_1586535[iParam1 /*143*/].f_104, 2))
+		if (BitTest(Global_1586536[iParam1 /*143*/].f_104, 2))
 		{
 			return 1;
 		}
@@ -17364,7 +17364,7 @@ int func_140(int iParam0)
 {
 	if (iParam0 > -1)
 	{
-		return Global_1586535[iParam0 /*143*/].f_66;
+		return Global_1586536[iParam0 /*143*/].f_66;
 	}
 	return 0;
 }
@@ -19535,12 +19535,12 @@ int func_185(int iParam0)
 		iLocal_76 = 7;
 		return 0;
 	}
-	if (iParam0 >= 0 && BitTest(Global_1586535[iParam0 /*143*/].f_104, 10))
+	if (iParam0 >= 0 && BitTest(Global_1586536[iParam0 /*143*/].f_104, 10))
 	{
 		iLocal_76 = 3;
 		return 0;
 	}
-	if (iParam0 >= 0 && BitTest(Global_1586535[iParam0 /*143*/].f_104, 1))
+	if (iParam0 >= 0 && BitTest(Global_1586536[iParam0 /*143*/].f_104, 1))
 	{
 		iLocal_76 = 2;
 		return 0;
@@ -19610,7 +19610,7 @@ int func_190(int iParam0)
 	iVar0 = PLAYER::GET_PLAYER_TEAM(PLAYER::PLAYER_ID());
 	if (iVar0 >= 0 && iVar0 <= 3)
 	{
-		if (((BitTest(Global_4718592.f_11, 30) && Global_4718592.f_121784[iVar0] != 0) || (BitTest(Global_4718592.f_180891, 10) && Global_1685265 != 0)) && func_233(iVar0))
+		if (((BitTest(Global_4718592.f_11, 30) && Global_4718592.f_121784[iVar0] != 0) || (BitTest(Global_4718592.f_180891, 10) && Global_1685266 != 0)) && func_233(iVar0))
 		{
 			return 0;
 		}
@@ -20665,7 +20665,7 @@ int func_212(int iParam0)
 		func_213(&iVar0);
 		return iVar0;
 	}
-	return Global_1685226;
+	return Global_1685227;
 }
 
 void func_213(int iParam0)
@@ -20908,7 +20908,7 @@ int func_237(int iParam0)
 	{
 		if (((func_209(PLAYER::PLAYER_ID()) || func_208(PLAYER::PLAYER_ID())) || (func_186() && NETWORK::NETWORK_IS_ACTIVITY_SESSION())) || BitTest(Global_4718592.f_34, 21))
 		{
-			if ((func_242(Global_1586535[iParam0 /*143*/].f_66) || (func_240(Global_1586535[iParam0 /*143*/].f_66) && func_239(Global_1586535[iParam0 /*143*/].f_66))) || func_238(Global_1586535[iParam0 /*143*/].f_66))
+			if ((func_242(Global_1586536[iParam0 /*143*/].f_66) || (func_240(Global_1586536[iParam0 /*143*/].f_66) && func_239(Global_1586536[iParam0 /*143*/].f_66))) || func_238(Global_1586536[iParam0 /*143*/].f_66))
 			{
 				return 1;
 			}

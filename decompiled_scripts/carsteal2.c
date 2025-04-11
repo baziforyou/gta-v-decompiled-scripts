@@ -3380,11 +3380,11 @@ bool func_41(int iParam0, int iParam1)
 		case 5:
 			if (iParam1 > -1)
 			{
-				return Global_1673654.f_203[iParam1];
+				return Global_1673655.f_203[iParam1];
 			}
 			break;
 	}
-	return BitTest(Global_1673654.f_1048, iParam0);
+	return BitTest(Global_1673655.f_1048, iParam0);
 }
 
 void func_42()
@@ -53153,7 +53153,7 @@ int func_480(int iParam0)
 				{
 					if (func_482() != -1 && func_482() < 547)
 					{
-						if (!func_481(iParam0) || ENTITY::GET_ENTITY_MODEL(iParam0) != Global_1586535[func_482() /*143*/].f_66)
+						if (!func_481(iParam0) || ENTITY::GET_ENTITY_MODEL(iParam0) != Global_1586536[func_482() /*143*/].f_66)
 						{
 							return 1;
 						}
@@ -53712,7 +53712,7 @@ int func_498(int iParam0, int iParam1)
 	}
 	if ((!Global_2707692 && iParam1 >= 0) && iParam1 <= 547)
 	{
-		if (BitTest(Global_1586535[iParam1 /*143*/].f_104, 2))
+		if (BitTest(Global_1586536[iParam1 /*143*/].f_104, 2))
 		{
 			return 1;
 		}
@@ -54393,7 +54393,7 @@ int func_525(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 				{
 					GRAPHICS::ANIMPOSTFX_PLAY("MP_OrbitalCannon", 0, true);
 				}
-				else if (Global_1582028 != -1)
+				else if (Global_1582029 != -1)
 				{
 				}
 				else
@@ -54407,7 +54407,7 @@ int func_525(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 				{
 					if (uParam0->f_485 != -1)
 					{
-						if (Global_1582028 == -1)
+						if (Global_1582029 == -1)
 						{
 							if (AUDIO::HAS_SOUND_FINISHED(uParam0->f_485))
 							{
@@ -54711,7 +54711,7 @@ void func_530(var uParam0, int iParam1, float fParam2, float fParam3)
 			GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(1);
 			if (iParam1 == 0)
 			{
-				if (Global_1582028 != -1 && uParam0->f_494)
+				if (Global_1582029 != -1 && uParam0->f_494)
 				{
 				}
 				else
@@ -55139,9 +55139,9 @@ void func_530(var uParam0, int iParam1, float fParam2, float fParam3)
 						fVar41 = ENTITY::GET_ENTITY_HEADING(uParam0->f_9);
 					}
 				}
-				if (Global_1582028 != -1)
+				if (Global_1582029 != -1)
 				{
-					if (Global_1582028 == 2 || Global_1582028 == 3)
+					if (Global_1582029 == 2 || Global_1582029 == 3)
 					{
 						fVar41 = (fVar41 - 174.4552f);
 					}
@@ -55163,7 +55163,7 @@ void func_530(var uParam0, int iParam1, float fParam2, float fParam3)
 					fVar41 = (fVar41 - 360f);
 				}
 				fVar44 = fVar36;
-				if (Global_1582028 != -1)
+				if (Global_1582029 != -1)
 				{
 					fVar42 = (fVar41 - MISC::ABSF(fParam3));
 					fVar43 = (fVar41 + MISC::ABSF(fParam2));
@@ -55927,7 +55927,7 @@ int func_556(int iParam0)
 
 char* func_557(int iParam0)
 {
-	if ((((func_488(PLAYER::PLAYER_ID()) || func_532(PLAYER::PLAYER_ID())) || func_487(PLAYER::PLAYER_ID())) || func_558(PLAYER::PLAYER_ID())) || Global_1582034 != -1)
+	if ((((func_488(PLAYER::PLAYER_ID()) || func_532(PLAYER::PLAYER_ID())) || func_487(PLAYER::PLAYER_ID())) || func_558(PLAYER::PLAYER_ID())) || Global_1582035 != -1)
 	{
 		return "turret_cam";
 	}
@@ -65887,7 +65887,7 @@ int func_690(int iParam0)
 	{
 		return 0;
 	}
-	if (Global_1577924)
+	if (Global_1577925)
 	{
 		return 0;
 	}
@@ -66290,15 +66290,15 @@ void func_704(bool bParam0, bool bParam1)
 		{
 			STREAMING::STOP_PLAYER_SWITCH();
 			func_709(0);
-			if (ENTITY::DOES_ENTITY_EXIST(Global_1577875))
+			if (ENTITY::DOES_ENTITY_EXIST(Global_1577876))
 			{
-				if (ENTITY::DOES_ENTITY_BELONG_TO_THIS_SCRIPT(Global_1577875, false))
+				if (ENTITY::DOES_ENTITY_BELONG_TO_THIS_SCRIPT(Global_1577876, false))
 				{
-					if (!ENTITY::IS_ENTITY_A_MISSION_ENTITY(Global_1577875))
+					if (!ENTITY::IS_ENTITY_A_MISSION_ENTITY(Global_1577876))
 					{
-						ENTITY::SET_ENTITY_AS_MISSION_ENTITY(Global_1577875, false, false);
+						ENTITY::SET_ENTITY_AS_MISSION_ENTITY(Global_1577876, false, false);
 					}
-					PED::DELETE_PED(&Global_1577875);
+					PED::DELETE_PED(&Global_1577876);
 				}
 			}
 		}
@@ -67316,7 +67316,7 @@ void func_732(var uParam0, int iParam1, var uParam2)
 
 bool func_733()
 {
-	return Global_1577922;
+	return Global_1577923;
 }
 
 int func_734(bool bParam0)
@@ -68554,10 +68554,10 @@ int func_750(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 				iVar76 = -1;
 				if (BitTest(Global_79322[1 /*14*/].f_6, 6) && FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(Global_2883588, joaat("CREW_COL"), 11))
 				{
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 0);
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 1);
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 2);
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 3);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 0);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 1);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 2);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 3);
 				}
 				iVar77 = func_362(iParam0, 11);
 				iVar78 = func_362(iParam0, 8);
@@ -89145,7 +89145,7 @@ int func_835(int iParam0)
 {
 	if (func_836(1))
 	{
-		return Global_1685296;
+		return Global_1685297;
 	}
 	if (iParam0 <= -1 || iParam0 >= 4)
 	{
@@ -128107,7 +128107,7 @@ void func_983(int iParam0)
 
 int func_984()
 {
-	switch (Global_1582033)
+	switch (Global_1582034)
 	{
 		case 1:
 			return 2;
@@ -128149,7 +128149,7 @@ void func_987(char* sParam0)
 
 char* func_988()
 {
-	switch (Global_1582033)
+	switch (Global_1582034)
 	{
 		case 1:
 			return "TITAN2_WH40";
@@ -128180,7 +128180,7 @@ void func_990()
 	int iVar0;
 	
 	iVar0 = 3;
-	switch (Global_1582033)
+	switch (Global_1582034)
 	{
 		case 1:
 			iVar0 = 4;
@@ -128237,7 +128237,7 @@ void func_992(int iParam0, int iParam1)
 
 int func_993()
 {
-	switch (Global_1582033)
+	switch (Global_1582034)
 	{
 		case 2:
 			return 729901544;
@@ -128258,16 +128258,16 @@ int func_993()
 
 int func_994()
 {
-	if (Global_1582033 == 4)
+	if (Global_1582034 == 4)
 	{
 		return 1;
 	}
-	return Global_1582033;
+	return Global_1582034;
 }
 
 bool func_995()
 {
-	return (Global_1582033 != -1 && Global_1582033 != 3);
+	return (Global_1582034 != -1 && Global_1582034 != 3);
 }
 
 void func_996(char* sParam0, bool bParam1)
@@ -128279,7 +128279,7 @@ void func_996(char* sParam0, bool bParam1)
 
 bool func_997()
 {
-	return Global_1582033 != -1;
+	return Global_1582034 != -1;
 }
 
 void func_998(var uParam0)
@@ -128360,10 +128360,10 @@ void func_1002(var uParam0)
 	iVar0 = ENTITY::GET_ENTITY_MODEL(uParam0->f_8);
 	if (iVar0 != 0)
 	{
-		if (func_1004(iVar0, Global_1582033))
+		if (func_1004(iVar0, Global_1582034))
 		{
 			uParam0->f_490 = AUDIO::GET_SOUND_ID();
-			AUDIO::PLAY_SOUND_FRONTEND(uParam0->f_490, func_1003(iVar0, Global_1582033), func_1000(iVar0), true);
+			AUDIO::PLAY_SOUND_FRONTEND(uParam0->f_490, func_1003(iVar0, Global_1582034), func_1000(iVar0), true);
 		}
 	}
 }
@@ -128400,7 +128400,7 @@ bool func_1004(int iParam0, int iParam1)
 
 bool func_1005()
 {
-	return Global_1582033 == 2;
+	return Global_1582034 == 2;
 }
 
 void func_1006(var uParam0)
@@ -128488,7 +128488,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 			if (!CAM::IS_CAM_ACTIVE(uParam0->f_32))
 			{
 				CAM::SET_CAM_ACTIVE(uParam0->f_32, true);
-				if (Global_1582028 != -1 || Global_1582034 != -1)
+				if (Global_1582029 != -1 || Global_1582035 != -1)
 				{
 					uParam0->f_494 = 1;
 				}
@@ -128508,13 +128508,13 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 				{
 					if (fVar9 > Var6.f_2 || MISC::ABSF((Var6.f_2 - fVar9)) < 0.1f)
 					{
-						if (Global_1582028 != -1 || Global_1582034 != -1)
+						if (Global_1582029 != -1 || Global_1582035 != -1)
 						{
 							if (uParam0->f_491 > 6)
 							{
 								if (ENTITY::GET_ENTITY_SUBMERGED_LEVEL(uParam0->f_8) >= 0.01f)
 								{
-									if (Global_1582028 != -1 || Global_1582034 != -1)
+									if (Global_1582029 != -1 || Global_1582035 != -1)
 									{
 										func_251("TUR_WATER", -1);
 										uParam0->f_34 = 1;
@@ -128525,7 +128525,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 								}
 								else
 								{
-									if (Global_1582034 != -1)
+									if (Global_1582035 != -1)
 									{
 										func_251("TUR_GR", -1);
 									}
@@ -128587,7 +128587,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 									break;
 								
 								case joaat("trailerlarge"):
-									switch (Global_1582028)
+									switch (Global_1582029)
 									{
 										case 1:
 											Var10 = { 0f, 8.4f, 1.3f };
@@ -128610,7 +128610,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 									Var19 = { 2045.091f, 2943.258f, 49.4991f };
 									Var22 = { 2040.365f, 2952.754f, 49.5688f };
 									Var25 = { 2049.385f, 2953.971f, 49.9635f };
-									switch (Global_1582034)
+									switch (Global_1582035)
 									{
 										case 1:
 											Var10 = { Var16 - Var13 };
@@ -128734,7 +128734,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 						}
 						if (uParam0->f_4)
 						{
-							if ((!func_556(uParam0->f_8) && !func_531()) || Global_1582028 != -1)
+							if ((!func_556(uParam0->f_8) && !func_531()) || Global_1582029 != -1)
 							{
 								if (iVar2 != 0 && iVar1 != 0)
 								{
@@ -128748,12 +128748,12 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 						}
 						if (!func_109(CAM::GET_CAM_COORD(uParam0->f_32), 0f, 0f, 0f, 0))
 						{
-							if (((uParam0->f_25 != 0f && !func_556(uParam0->f_8)) && !func_531()) || Global_1582028 != -1)
+							if (((uParam0->f_25 != 0f && !func_556(uParam0->f_8)) && !func_531()) || Global_1582029 != -1)
 							{
 								if (VEHICLE::IS_VEHICLE_DRIVEABLE(uParam0->f_8, false))
 								{
 									fVar38 = ENTITY::GET_ENTITY_HEADING(uParam0->f_8);
-									if (Global_1582028 == 2 || Global_1582028 == 3)
+									if (Global_1582029 == 2 || Global_1582029 == 3)
 									{
 										fVar38 = (fVar38 - 174.4552f);
 									}
@@ -128773,7 +128773,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 										{
 										}
 									}
-									if (Global_1582028 != -1)
+									if (Global_1582029 != -1)
 									{
 										if (fVar39 >= fParam4)
 										{
@@ -128834,7 +128834,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 												break;
 											
 											default:
-												switch (Global_1582033)
+												switch (Global_1582034)
 												{
 													case 0:
 														fVar49 = ((MISC::ABSF(uParam0->f_464.f_2) - 90f) / 90f);
@@ -128861,7 +128861,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 										{
 											case joaat("avenger"):
 											case joaat("avenger3"):
-												switch (Global_1582034)
+												switch (Global_1582035)
 												{
 													case 1:
 														fVar49 = ((MISC::ABSF(uParam0->f_464.f_2) - 90f) / 90f);
@@ -128882,7 +128882,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 												break;
 											
 											default:
-												switch (Global_1582034)
+												switch (Global_1582035)
 												{
 													case 1:
 														fVar49 = ((MISC::ABSF(uParam0->f_464.f_2) - 90f) / 90f);
@@ -128950,7 +128950,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 								{
 									iVar50 = ENTITY::GET_ENTITY_MODEL(uParam0->f_8);
 								}
-								if (Global_1582033 != -1 || Global_1582034 != -1)
+								if (Global_1582034 != -1 || Global_1582035 != -1)
 								{
 									if (!func_555(3))
 									{
@@ -128960,7 +128960,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 									{
 										fVar51 = (((uParam0->f_40 - (uParam0->f_39 - 1f)) / (uParam0->f_38 - (uParam0->f_39 - 1f))) * 8f);
 									}
-									if ((Global_1582033 == 4 && iVar50 == 858355070) && PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
+									if ((Global_1582034 == 4 && iVar50 == 858355070) && PAD::IS_USING_KEYBOARD_AND_MOUSE(0))
 									{
 										fVar51 = (fVar51 * 10f);
 									}
@@ -129117,7 +129117,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 									iLocal_65 = 6;
 								}
 							}
-							if ((!func_556(uParam0->f_8) && !func_531()) || Global_1582028 != -1)
+							if ((!func_556(uParam0->f_8) && !func_531()) || Global_1582029 != -1)
 							{
 								Var54 = { uParam0->f_240 };
 								if (uParam0->f_4)
@@ -129138,7 +129138,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 							{
 								if (ENTITY::GET_ENTITY_MODEL(uParam0->f_9) == joaat("volatol"))
 								{
-									switch (Global_1582033)
+									switch (Global_1582034)
 									{
 										case 1:
 											Var64 = { 0f, 7.1f, -1.52f };
@@ -129155,7 +129155,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 								}
 								if (ENTITY::GET_ENTITY_MODEL(uParam0->f_9) == joaat("bombushka"))
 								{
-									switch (Global_1582033)
+									switch (Global_1582034)
 									{
 										case 0:
 											Var58 = { Vector(2.43f, -4.26f, -3.42f) + Vector(0f, -1.25f, 2.82f) };
@@ -129183,7 +129183,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 								}
 								if (ENTITY::GET_ENTITY_MODEL(uParam0->f_9) == 858355070)
 								{
-									switch (Global_1582033)
+									switch (Global_1582034)
 									{
 										case 1:
 											Var58 = { -2.319f, -6.923f, -0.63f };
@@ -129213,7 +129213,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 								}
 								if (ENTITY::GET_ENTITY_MODEL(uParam0->f_9) == joaat("avenger") || ENTITY::GET_ENTITY_MODEL(uParam0->f_9) == joaat("avenger3"))
 								{
-									switch (Global_1582034)
+									switch (Global_1582035)
 									{
 										case 1:
 											Var58 = { 0f, 9.8f, -2.315f };
@@ -129238,7 +129238,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 								}
 								if (ENTITY::GET_ENTITY_MODEL(uParam0->f_9) == joaat("akula"))
 								{
-									switch (Global_1582033)
+									switch (Global_1582034)
 									{
 										case 0:
 											Var58 = { 0f, 9f, -1.2f };
@@ -129258,7 +129258,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 								}
 								if (ENTITY::GET_ENTITY_MODEL(uParam0->f_9) == joaat("phantom3"))
 								{
-									switch (Global_1582033)
+									switch (Global_1582034)
 									{
 										case 0:
 											Var58 = { 0f, 0f, 0f };
@@ -129275,7 +129275,7 @@ void func_1007(var uParam0, float fParam1, float fParam2, float fParam3, float f
 								{
 									CAM::HARD_ATTACH_CAM_TO_PED_BONE(uParam0->f_32, PLAYER::PLAYER_PED_ID(), -1, Var61 + Vector(uParam0->f_464.f_2, 0f, uParam0->f_464), Var58, true);
 								}
-								else if (Global_1582034 != -1 || (func_556(uParam0->f_8) && ENTITY::GET_ENTITY_MODEL(uParam0->f_8) != joaat("bombushka")))
+								else if (Global_1582035 != -1 || (func_556(uParam0->f_8) && ENTITY::GET_ENTITY_MODEL(uParam0->f_8) != joaat("bombushka")))
 								{
 									CAM::ATTACH_CAM_TO_VEHICLE_BONE(uParam0->f_32, uParam0->f_9, 0, true, Var61 + Vector(uParam0->f_464.f_2, 0f, uParam0->f_464), Var58, true);
 								}
@@ -129442,7 +129442,7 @@ float func_1012(var uParam0)
 		switch (ENTITY::GET_ENTITY_MODEL(uParam0->f_8))
 		{
 			case 858355070:
-				switch (Global_1582033)
+				switch (Global_1582034)
 				{
 					case 4:
 						return -10f;
@@ -135538,7 +135538,7 @@ int func_1060(struct<3> Param0, float fParam3, int iParam4, int iParam5)
 
 void func_1061(var uParam0, struct<3> Param1)
 {
-	if ((!func_556(uParam0->f_8) && !func_554()) || Global_1582028 != -1)
+	if ((!func_556(uParam0->f_8) && !func_554()) || Global_1582029 != -1)
 	{
 		uParam0->f_124 = { Param1 };
 		CAM::POINT_CAM_AT_COORD(uParam0->f_32, uParam0->f_124);

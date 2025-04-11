@@ -461,7 +461,7 @@ int func_4(struct<6> Param0, struct<16> Param6, int iParam22, struct<13> Param23
 		iVar71 = 0;
 		iVar69 = 1;
 	}
-	iVar80 = Global_1685113;
+	iVar80 = Global_1685114;
 	if (iVar80 >= 12)
 	{
 		iVar80 = (iVar80 - 1);
@@ -473,10 +473,10 @@ int func_4(struct<6> Param0, struct<16> Param6, int iParam22, struct<13> Param23
 		iVar80 = (iVar80 - 1);
 		iVar81 = (iVar81 - 1);
 	}
-	Global_1685113++;
-	if (Global_1685113 > 12)
+	Global_1685114++;
+	if (Global_1685114 > 12)
 	{
-		Global_1685113 = 12;
+		Global_1685114 = 12;
 	}
 	iVar82 = 0;
 	Global_2623445[iVar82 /*99*/] = 0;
@@ -805,7 +805,7 @@ int func_20()
 	{
 		if (NETWORK::NETWORK_HAVE_COMMUNICATION_PRIVILEGES(0, -1))
 		{
-			if (NETWORK::NETWORK_HAVE_ONLINE_PRIVILEGES())
+			if (NETWORK::NETWORK_HAVE_ONLINE_PRIVILEGES() && NETWORK::NETWORK_HAVE_USER_CONTENT_PRIVILEGES(0))
 			{
 				return 1;
 			}
@@ -2040,7 +2040,7 @@ void func_39(int iParam0)
 	int iVar1;
 	int iVar2;
 	
-	if (iParam0 >= Global_1685113)
+	if (iParam0 >= Global_1685114)
 	{
 		return;
 	}
@@ -2073,17 +2073,17 @@ void func_39(int iParam0)
 	func_47(Global_2623445[iParam0 /*99*/].f_91);
 	iVar1 = iParam0;
 	iVar2 = iVar1 + 1;
-	while (iVar2 < Global_1685113)
+	while (iVar2 < Global_1685114)
 	{
 		Global_2623445[iVar1 /*99*/] = { Global_2623445[iVar2 /*99*/] };
 		iVar1++;
 		iVar2++;
 	}
 	func_41(iVar1);
-	Global_1685113 = (Global_1685113 - 1);
-	if (Global_1685086)
+	Global_1685114 = (Global_1685114 - 1);
+	if (Global_1685087)
 	{
-		if (Global_1685084 > 0)
+		if (Global_1685085 > 0)
 		{
 			func_40();
 		}
@@ -2092,7 +2092,7 @@ void func_39(int iParam0)
 
 void func_40()
 {
-	Global_1685086 = 0;
+	Global_1685087 = 0;
 }
 
 void func_41(int iParam0)
@@ -2132,7 +2132,7 @@ int func_42(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 	
 	iVar0 = 0;
 	iVar0 = 0;
-	while (iVar0 < Global_1685113)
+	while (iVar0 < Global_1685114)
 	{
 		if (MISC::ARE_STRINGS_EQUAL(&uParam0, &(Global_2623445[iVar0 /*99*/].f_15)))
 		{

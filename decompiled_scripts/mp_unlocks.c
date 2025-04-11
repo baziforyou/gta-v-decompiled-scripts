@@ -2847,17 +2847,17 @@ int func_75(int iParam0)
 	iVar0 = iParam0;
 	iVar1 = func_20(iVar0);
 	bVar2 = func_9(iVar0);
-	if ((PAD::IS_CONTROL_JUST_RELEASED(2, iParam0) || PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2, iParam0)) || func_76(iParam0, &(Global_1673654.f_1060), 1))
+	if ((PAD::IS_CONTROL_JUST_RELEASED(2, iParam0) || PAD::IS_DISABLED_CONTROL_JUST_RELEASED(2, iParam0)) || func_76(iParam0, &(Global_1673655.f_1060), 1))
 	{
-		if (!BitTest(Global_1673654.f_1049[iVar1], bVar2))
+		if (!BitTest(Global_1673655.f_1049[iVar1], bVar2))
 		{
-			MISC::SET_BIT(&(Global_1673654.f_1049[iVar1]), bVar2);
+			MISC::SET_BIT(&(Global_1673655.f_1049[iVar1]), bVar2);
 			return 1;
 		}
 	}
-	else if (BitTest(Global_1673654.f_1049[iVar1], bVar2))
+	else if (BitTest(Global_1673655.f_1049[iVar1], bVar2))
 	{
-		MISC::CLEAR_BIT(&(Global_1673654.f_1049[iVar1]), bVar2);
+		MISC::CLEAR_BIT(&(Global_1673655.f_1049[iVar1]), bVar2);
 	}
 	return 0;
 }

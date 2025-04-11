@@ -3397,7 +3397,7 @@ void func_136(var uParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 		}
 		if (!func_59(uParam0->f_23, uParam0->f_24, NETWORK::UGC_GET_CONTENT_USER_ID(uParam0->f_6), NETWORK::UGC_GET_CONTENT_CATEGORY(uParam0->f_6)))
 		{
-			if (bParam5 && func_61())
+			if (bParam5 && (func_61() || unk_0xE2BCD0EFAE90D1F4()))
 			{
 				iVar1 = (iVar0 % 32);
 				iVar2 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) / 32f));
@@ -33089,9 +33089,9 @@ void func_195(int iParam0, bool bParam1, int iParam2, bool bParam3, int iParam4,
 		{
 			func_207(iParam0, 1, iParam5);
 		}
-		if (Global_1673654.f_1043 == 0)
+		if (Global_1673655.f_1043 == 0)
 		{
-			Global_1673654.f_1044 = iParam0;
+			Global_1673655.f_1044 = iParam0;
 		}
 	}
 	else
@@ -33816,15 +33816,15 @@ void func_213(int iParam0, char* sParam1, char* sParam2, char* sParam3, char* sP
 {
 	int iVar0;
 	
-	iVar0 = func_214(&Global_1682341);
-	Global_1682341[iVar0 /*106*/] = iParam0;
-	StringCopy(&(Global_1682341[iVar0 /*106*/].f_17), sParam3, 64);
-	StringCopy(&(Global_1682341[iVar0 /*106*/].f_1), sParam4, 64);
-	StringCopy(&(Global_1682341[iVar0 /*106*/].f_33), sParam1, 64);
-	StringCopy(&(Global_1682341[iVar0 /*106*/].f_49), sParam2, 64);
-	Global_1682341[iVar0 /*106*/].f_97 = iParam5;
-	Global_1682341[iVar0 /*106*/].f_104 = iParam9;
-	Global_1682341[iVar0 /*106*/].f_105 = iParam10;
+	iVar0 = func_214(&Global_1682342);
+	Global_1682342[iVar0 /*106*/] = iParam0;
+	StringCopy(&(Global_1682342[iVar0 /*106*/].f_17), sParam3, 64);
+	StringCopy(&(Global_1682342[iVar0 /*106*/].f_1), sParam4, 64);
+	StringCopy(&(Global_1682342[iVar0 /*106*/].f_33), sParam1, 64);
+	StringCopy(&(Global_1682342[iVar0 /*106*/].f_49), sParam2, 64);
+	Global_1682342[iVar0 /*106*/].f_97 = iParam5;
+	Global_1682342[iVar0 /*106*/].f_104 = iParam9;
+	Global_1682342[iVar0 /*106*/].f_105 = iParam10;
 	if (iParam6 != 0)
 	{
 	}
@@ -33833,7 +33833,7 @@ void func_213(int iParam0, char* sParam1, char* sParam2, char* sParam3, char* sP
 	}
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam8))
 	{
-		StringCopy(&(Global_1682341[iVar0 /*106*/].f_98), sParam8, 24);
+		StringCopy(&(Global_1682342[iVar0 /*106*/].f_98), sParam8, 24);
 	}
 }
 
@@ -38246,7 +38246,7 @@ void func_305(int iParam0, int iParam1)
 	var uVar0;
 	int iVar1;
 	
-	uVar0 = Global_1685132[iParam0];
+	uVar0 = Global_1685133[iParam0];
 	iVar1 = uVar0;
 	STATS::STAT_SET_INT(iVar1, iParam1, true);
 }

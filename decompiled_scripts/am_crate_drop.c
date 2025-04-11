@@ -6006,8 +6006,8 @@ int func_186(int iParam0, var uParam1, int iParam2, int iParam3, bool bParam4, b
 
 void func_187()
 {
-	Global_1668597.f_2 = 1;
-	Global_1668597.f_3 = NETWORK::GET_TIME_OFFSET(NETWORK::GET_NETWORK_TIME(), 1000);
+	Global_1668598.f_2 = 1;
+	Global_1668598.f_3 = NETWORK::GET_TIME_OFFSET(NETWORK::GET_NETWORK_TIME(), 1000);
 }
 
 void func_188(bool bParam0)
@@ -47630,7 +47630,7 @@ int func_329(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		return 3;
 	}
 	iVar0 = PLAYER::GET_PLAYER_TEAM(iParam0);
-	if ((func_338() || (func_337() && func_335())) && Global_1685172.f_1)
+	if ((func_338() || (func_337() && func_335())) && Global_1685173.f_1)
 	{
 		if (bParam1)
 		{
@@ -49107,7 +49107,7 @@ int func_409(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 	int iVar0;
 	int iVar1;
 	
-	if (!BitTest(Global_1686501, 0))
+	if (!BitTest(Global_1686502, 0))
 	{
 		return 0;
 	}
@@ -49177,15 +49177,15 @@ int func_411(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return Global_1686501.f_1;
+			return Global_1686502.f_1;
 			break;
 		
 		case 1:
-			return Global_1686501.f_2;
+			return Global_1686502.f_2;
 			break;
 		
 		case 2:
-			return Global_1686501.f_3;
+			return Global_1686502.f_3;
 			break;
 	}
 	return 0;
@@ -49239,15 +49239,15 @@ int func_413(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return Global_1686509;
-			break;
-		
-		case 1:
 			return Global_1686510;
 			break;
 		
-		case 2:
+		case 1:
 			return Global_1686511;
+			break;
+		
+		case 2:
+			return Global_1686512;
 			break;
 	}
 	return 0;

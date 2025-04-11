@@ -391,7 +391,7 @@ void func_11(char* sParam0)
 
 bool func_12()
 {
-	return Global_1577877;
+	return Global_1577878;
 }
 
 int func_13()
@@ -405,7 +405,7 @@ int func_13()
 	{
 		if (Global_2696309[iVar1] != 0)
 		{
-			Global_1577878 = iVar1;
+			Global_1577879 = iVar1;
 			iVar0 = 1;
 			iVar1 = 10;
 		}

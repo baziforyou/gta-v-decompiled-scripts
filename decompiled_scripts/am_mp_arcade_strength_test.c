@@ -1231,7 +1231,7 @@ void func_61()
 				switch (iVar2)
 				{
 					case -488983389:
-						if (Global_1689004.f_851)
+						if (Global_1689005.f_851)
 						{
 							return;
 						}
@@ -1239,7 +1239,7 @@ void func_61()
 						break;
 					
 					case 1552856339:
-						if (Global_1689004.f_852)
+						if (Global_1689005.f_852)
 						{
 							return;
 						}
@@ -1247,7 +1247,7 @@ void func_61()
 						break;
 					
 					case 745995059:
-						if (Global_1689004.f_854)
+						if (Global_1689005.f_854)
 						{
 							return;
 						}
@@ -1255,7 +1255,7 @@ void func_61()
 						break;
 					
 					case 1202908870:
-						if (Global_1689004.f_856)
+						if (Global_1689005.f_856)
 						{
 							return;
 						}
@@ -1263,7 +1263,7 @@ void func_61()
 						break;
 					
 					case 953310420:
-						if (Global_1689004.f_857)
+						if (Global_1689005.f_857)
 						{
 							return;
 						}
@@ -1271,7 +1271,7 @@ void func_61()
 						break;
 					
 					case -579894567:
-						if (Global_1689004.f_858)
+						if (Global_1689005.f_858)
 						{
 							return;
 						}
@@ -1279,7 +1279,7 @@ void func_61()
 						break;
 					
 					case 1381718368:
-						if (Global_1689004.f_859)
+						if (Global_1689005.f_859)
 						{
 							return;
 						}
@@ -43467,10 +43467,10 @@ int func_447(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 				iVar76 = -1;
 				if (BitTest(Global_79322[1 /*14*/].f_6, 6) && FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(Global_2883588, joaat("CREW_COL"), 11))
 				{
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 0);
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 1);
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 2);
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 3);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 0);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 1);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 2);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 3);
 				}
 				iVar77 = func_80(iParam0, 11);
 				iVar78 = func_80(iParam0, 8);
@@ -62882,7 +62882,7 @@ int func_511(int iParam0)
 {
 	if (func_512(1))
 	{
-		return Global_1685296;
+		return Global_1685297;
 	}
 	if (iParam0 <= -1 || iParam0 >= 4)
 	{
@@ -81289,11 +81289,11 @@ void func_582()
 {
 	int iVar0;
 	
-	Global_1673654.f_1047 = 0;
+	Global_1673655.f_1047 = 0;
 	iVar0 = 0;
 	while (iVar0 <= 31)
 	{
-		Global_1673654.f_170[iVar0] = 0;
+		Global_1673655.f_170[iVar0] = 0;
 		iVar0++;
 	}
 	Global_2739811.f_4667 = 1;

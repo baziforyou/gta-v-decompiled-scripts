@@ -965,7 +965,7 @@ int func_26(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		return 3;
 	}
 	iVar0 = PLAYER::GET_PLAYER_TEAM(iParam0);
-	if ((func_41() || (func_40() && func_38())) && Global_1685172.f_1)
+	if ((func_41() || (func_40() && func_38())) && Global_1685173.f_1)
 	{
 		if (bParam1)
 		{

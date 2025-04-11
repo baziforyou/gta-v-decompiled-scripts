@@ -516,7 +516,7 @@ void func_17(var uParam0)
 	int iVar1;
 	float fVar2;
 	
-	if (!Global_1586037.f_21)
+	if (!Global_1586038.f_21)
 	{
 		iVar1 = func_19(*uParam0, uParam0->f_1);
 		if (iVar1 == -1)
@@ -525,7 +525,7 @@ void func_17(var uParam0)
 			uParam0->f_1 = 0;
 			if (*uParam0 >= 4)
 			{
-				Global_1586037.f_21 = 1;
+				Global_1586038.f_21 = 1;
 			}
 			return;
 		}
@@ -533,14 +533,14 @@ void func_17(var uParam0)
 		{
 			iVar0 = iVar1;
 			fVar2 = func_18(iVar0);
-			if (Global_1586037[*uParam0 /*5*/][0] < fVar2)
+			if (Global_1586038[*uParam0 /*5*/][0] < fVar2)
 			{
-				Global_1586037[*uParam0 /*5*/][0] = fVar2;
+				Global_1586038[*uParam0 /*5*/][0] = fVar2;
 			}
 			fVar2 = VEHICLE::GET_VEHICLE_CLASS_MAX_ACCELERATION(iVar0);
-			if (Global_1586037[*uParam0 /*5*/][1] < fVar2)
+			if (Global_1586038[*uParam0 /*5*/][1] < fVar2)
 			{
-				Global_1586037[*uParam0 /*5*/][1] = fVar2;
+				Global_1586038[*uParam0 /*5*/][1] = fVar2;
 			}
 			if ((iVar0 == 15 || iVar0 == 16) || iVar0 == 14)
 			{
@@ -550,14 +550,14 @@ void func_17(var uParam0)
 			{
 				fVar2 = VEHICLE::GET_VEHICLE_CLASS_MAX_TRACTION(iVar0);
 			}
-			if (Global_1586037[*uParam0 /*5*/][3] < fVar2)
+			if (Global_1586038[*uParam0 /*5*/][3] < fVar2)
 			{
-				Global_1586037[*uParam0 /*5*/][3] = fVar2;
+				Global_1586038[*uParam0 /*5*/][3] = fVar2;
 			}
 			fVar2 = VEHICLE::GET_VEHICLE_CLASS_MAX_BRAKING(iVar0);
-			if (Global_1586037[*uParam0 /*5*/][2] < fVar2)
+			if (Global_1586038[*uParam0 /*5*/][2] < fVar2)
 			{
-				Global_1586037[*uParam0 /*5*/][2] = fVar2;
+				Global_1586038[*uParam0 /*5*/][2] = fVar2;
 			}
 			uParam0->f_1++;
 		}
@@ -1798,7 +1798,7 @@ int func_42(int iParam0, int iParam1)
 	}
 	if ((!Global_2707692 && iParam1 >= 0) && iParam1 <= 547)
 	{
-		if (BitTest(Global_1586535[iParam1 /*143*/].f_104, 2))
+		if (BitTest(Global_1586536[iParam1 /*143*/].f_104, 2))
 		{
 			return 1;
 		}
@@ -5716,7 +5716,7 @@ void func_76(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 
 void func_77(int iParam0)
 {
-	Global_1675211.f_1163 = iParam0;
+	Global_1675212.f_1163 = iParam0;
 }
 
 void func_78(int iParam0)
@@ -7130,11 +7130,11 @@ var func_117(int iParam0, int iParam1)
 		case 5:
 			if (iParam1 > -1)
 			{
-				return Global_1673654.f_203[iParam1];
+				return Global_1673655.f_203[iParam1];
 			}
 			break;
 	}
-	return BitTest(Global_1673654.f_1048, iParam0);
+	return BitTest(Global_1673655.f_1048, iParam0);
 }
 
 void func_118(int iParam0)
@@ -24835,7 +24835,7 @@ int func_333(int iParam0)
 				{
 					if (func_335() != -1 && func_335() < 547)
 					{
-						if (!func_334(iParam0) || ENTITY::GET_ENTITY_MODEL(iParam0) != Global_1586535[func_335() /*143*/].f_66)
+						if (!func_334(iParam0) || ENTITY::GET_ENTITY_MODEL(iParam0) != Global_1586536[func_335() /*143*/].f_66)
 						{
 							return 1;
 						}

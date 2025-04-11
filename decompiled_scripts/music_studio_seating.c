@@ -2795,7 +2795,7 @@ int func_77()
 
 bool func_78()
 {
-	return Global_1579666.f_2 != 8;
+	return Global_1579667.f_2 != 8;
 }
 
 int func_79(int iParam0, struct<3> Param1, int iParam4)

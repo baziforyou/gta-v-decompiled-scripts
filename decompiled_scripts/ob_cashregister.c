@@ -37,7 +37,7 @@ void __EntryFunction__()
 	iLocal_15 = -1;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (BitTest(Global_1686501, 1))
+		if (BitTest(Global_1686502, 1))
 		{
 			func_25();
 		}

@@ -2089,7 +2089,7 @@ void func_59(int* iParam0, var uParam1)
 
 void func_60(int iParam0)
 {
-	Global_1675211.f_1163 = iParam0;
+	Global_1675212.f_1163 = iParam0;
 }
 
 void func_61(var uParam0, var uParam1, var uParam2, int iParam3)
@@ -2117,7 +2117,7 @@ void func_61(var uParam0, var uParam1, var uParam2, int iParam3)
 		}
 		func_67(uParam2);
 	}
-	if (Global_1577950 < 2)
+	if (Global_1577951 < 2)
 	{
 		func_66(1);
 	}
@@ -2294,7 +2294,7 @@ void func_65(char* sParam0)
 
 void func_66(int iParam0)
 {
-	Global_1577950 = iParam0;
+	Global_1577951 = iParam0;
 }
 
 void func_67(var uParam0)
@@ -2749,13 +2749,13 @@ bool func_95()
 
 void func_96(int iParam0, int iParam1)
 {
-	MISC::SET_BIT(&(Global_1673654.f_1047), iParam0);
+	MISC::SET_BIT(&(Global_1673655.f_1047), iParam0);
 	switch (iParam0)
 	{
 		case 5:
 			if (iParam1 > -1)
 			{
-				Global_1673654.f_170[iParam1] = 1;
+				Global_1673655.f_170[iParam1] = 1;
 			}
 			break;
 	}

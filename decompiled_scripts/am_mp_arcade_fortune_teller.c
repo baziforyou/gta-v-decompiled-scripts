@@ -1252,7 +1252,7 @@ void func_42()
 				switch (iVar2)
 				{
 					case 1461088877:
-						if (Global_1689004.f_869)
+						if (Global_1689005.f_869)
 						{
 							return;
 						}

@@ -5540,7 +5540,7 @@ void func_95(int iParam0, var uParam1, var uParam2, int iParam3)
 		}
 		func_100(uParam2);
 	}
-	if (Global_1577950 < 2)
+	if (Global_1577951 < 2)
 	{
 		func_102(1);
 	}
@@ -5728,12 +5728,12 @@ int func_101(var uParam0)
 
 void func_102(int iParam0)
 {
-	Global_1577950 = iParam0;
+	Global_1577951 = iParam0;
 }
 
 void func_103(int iParam0)
 {
-	Global_1675211.f_1163 = iParam0;
+	Global_1675212.f_1163 = iParam0;
 }
 
 void func_104(char* sParam0, char* sParam1, var uParam2, char* sParam3)

@@ -2830,15 +2830,15 @@ void func_74(struct<3> Param0)
 			}
 			iVar12++;
 		}
-		iVar13 = VEHICLE::GET_ALL_VEHICLES(&Global_1578081);
+		iVar13 = VEHICLE::GET_ALL_VEHICLES(&Global_1578082);
 		iVar14 = 0;
 		while (iVar14 < iVar13)
 		{
-			if (ENTITY::DOES_ENTITY_EXIST(Global_1578081[iVar14]))
+			if (ENTITY::DOES_ENTITY_EXIST(Global_1578082[iVar14]))
 			{
-				if (((func_78(Global_1578081[iVar14], 0) || func_77(Global_1578081[iVar14], 0)) || func_76(Global_1578081[iVar14], 0)) || func_75(Global_1578081[iVar14], 0))
+				if (((func_78(Global_1578082[iVar14], 0) || func_77(Global_1578082[iVar14], 0)) || func_76(Global_1578082[iVar14], 0)) || func_75(Global_1578082[iVar14], 0))
 				{
-					Var7 = { ENTITY::GET_ENTITY_COORDS(Global_1578081[iVar14], false) };
+					Var7 = { ENTITY::GET_ENTITY_COORDS(Global_1578082[iVar14], false) };
 					if (MISC::GET_DISTANCE_BETWEEN_COORDS(Param0, Var7, false) < 15f && Var7.f_2 >= (Param0.f_2 - 15f))
 					{
 						FIRE::ADD_OWNED_EXPLOSION(PLAYER::PLAYER_PED_ID(), Var7, 59, 1f, true, false, 1f);
@@ -5476,7 +5476,7 @@ int func_134(var uParam0)
 
 void func_135(int iParam0)
 {
-	Global_1675211.f_1163 = iParam0;
+	Global_1675212.f_1163 = iParam0;
 }
 
 void func_136(var uParam0, var uParam1, var uParam2, int iParam3)
@@ -5504,7 +5504,7 @@ void func_136(var uParam0, var uParam1, var uParam2, int iParam3)
 		}
 		func_142(uParam2);
 	}
-	if (Global_1577950 < 2)
+	if (Global_1577951 < 2)
 	{
 		func_141(1);
 	}
@@ -5681,7 +5681,7 @@ void func_140(char* sParam0)
 
 void func_141(int iParam0)
 {
-	Global_1577950 = iParam0;
+	Global_1577951 = iParam0;
 }
 
 void func_142(var uParam0)

@@ -197,7 +197,7 @@ void __EntryFunction__()
 		switch (iLocal_142)
 		{
 			case 0:
-				if (Global_2640052.f_27 && Global_1579615 == -1)
+				if (Global_2640052.f_27 && Global_1579616 == -1)
 				{
 				}
 				else
@@ -2341,7 +2341,7 @@ int func_68()
 			break;
 		
 		case 4:
-			switch (Global_1579613)
+			switch (Global_1579614)
 			{
 				case 3:
 				case 4:
@@ -2366,7 +2366,7 @@ void func_69()
 			break;
 		
 		case 4:
-			switch (Global_1579613)
+			switch (Global_1579614)
 			{
 				case 0:
 				case 1:
@@ -3275,7 +3275,7 @@ void func_86()
 						}
 						else
 						{
-							Global_1578042 = 1;
+							Global_1578043 = 1;
 							if ((!Global_2635516.f_2981 && !func_138()) && !func_137())
 							{
 								func_87();
@@ -8070,7 +8070,7 @@ int func_233(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 	int iVar0;
 	int iVar1;
 	
-	if (!BitTest(Global_1686501, 0))
+	if (!BitTest(Global_1686502, 0))
 	{
 		return 0;
 	}
@@ -8140,15 +8140,15 @@ int func_235(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return Global_1686501.f_1;
+			return Global_1686502.f_1;
 			break;
 		
 		case 1:
-			return Global_1686501.f_2;
+			return Global_1686502.f_2;
 			break;
 		
 		case 2:
-			return Global_1686501.f_3;
+			return Global_1686502.f_3;
 			break;
 	}
 	return 0;
@@ -8202,15 +8202,15 @@ int func_237(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return Global_1686509;
-			break;
-		
-		case 1:
 			return Global_1686510;
 			break;
 		
-		case 2:
+		case 1:
 			return Global_1686511;
+			break;
+		
+		case 2:
+			return Global_1686512;
 			break;
 	}
 	return 0;
@@ -62507,7 +62507,7 @@ int func_518(int iParam0)
 {
 	if (func_519(1))
 	{
-		return Global_1685296;
+		return Global_1685297;
 	}
 	if (iParam0 <= -1 || iParam0 >= 4)
 	{
@@ -64823,10 +64823,10 @@ int func_549(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 				iVar76 = -1;
 				if (BitTest(Global_79322[1 /*14*/].f_6, 6) && FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(Global_2883588, joaat("CREW_COL"), 11))
 				{
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 0);
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 1);
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 2);
-					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576241, Global_1576242, Global_1576243, 3);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 0);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 1);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 2);
+					PED::SET_HEAD_BLEND_PALETTE_COLOR(iParam0, Global_1576242, Global_1576243, Global_1576244, 3);
 				}
 				iVar77 = func_12(iParam0, 11);
 				iVar78 = func_12(iParam0, 8);
@@ -103345,7 +103345,7 @@ int func_733()
 	int iVar0;
 	
 	iVar0 = func_771();
-	if ((((((iVar0 > -1 && !Global_1586535[iVar0 /*143*/].f_66 == 0) && !BitTest(Global_1586535[iVar0 /*143*/].f_104, 1)) && !BitTest(Global_1586535[iVar0 /*143*/].f_104, 6)) && !func_770(0)) && !func_770(31)) && func_734())
+	if ((((((iVar0 > -1 && !Global_1586536[iVar0 /*143*/].f_66 == 0) && !BitTest(Global_1586536[iVar0 /*143*/].f_104, 1)) && !BitTest(Global_1586536[iVar0 /*143*/].f_104, 6)) && !func_770(0)) && !func_770(31)) && func_734())
 	{
 		return 1;
 	}
@@ -103549,7 +103549,7 @@ int func_757(int iParam0)
 	{
 		if (((func_748(PLAYER::PLAYER_ID()) || func_747(PLAYER::PLAYER_ID())) || (func_763() && NETWORK::NETWORK_IS_ACTIVITY_SESSION())) || BitTest(Global_4718592.f_34, 21))
 		{
-			if ((func_762(Global_1586535[iParam0 /*143*/].f_66) || (func_760(Global_1586535[iParam0 /*143*/].f_66) && func_759(Global_1586535[iParam0 /*143*/].f_66))) || func_758(Global_1586535[iParam0 /*143*/].f_66))
+			if ((func_762(Global_1586536[iParam0 /*143*/].f_66) || (func_760(Global_1586536[iParam0 /*143*/].f_66) && func_759(Global_1586536[iParam0 /*143*/].f_66))) || func_758(Global_1586536[iParam0 /*143*/].f_66))
 			{
 				return 1;
 			}

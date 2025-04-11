@@ -2285,7 +2285,7 @@ int func_53(int iParam0, int iParam1)
 
 void func_54()
 {
-	if (Global_1668022[5] >= Global_262145.f_18233)
+	if (Global_1668023[5] >= Global_262145.f_18233)
 	{
 		func_257("OR_MIS_NA_B", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
 	}
@@ -2387,7 +2387,7 @@ int func_57(int iParam0)
 		func_63("BKR_TF_R3");
 		return 0;
 	}
-	if (Global_1668003[5] != 0)
+	if (Global_1668004[5] != 0)
 	{
 		func_63("BKR_TF_R6");
 		return 0;
@@ -4022,7 +4022,7 @@ int func_105(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 	int iVar0;
 	int iVar1;
 	
-	if (!BitTest(Global_1686501, 0))
+	if (!BitTest(Global_1686502, 0))
 	{
 		return 0;
 	}
@@ -4092,15 +4092,15 @@ int func_107(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return Global_1686501.f_1;
+			return Global_1686502.f_1;
 			break;
 		
 		case 1:
-			return Global_1686501.f_2;
+			return Global_1686502.f_2;
 			break;
 		
 		case 2:
-			return Global_1686501.f_3;
+			return Global_1686502.f_3;
 			break;
 	}
 	return 0;
@@ -4154,15 +4154,15 @@ int func_109(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return Global_1686509;
-			break;
-		
-		case 1:
 			return Global_1686510;
 			break;
 		
-		case 2:
+		case 1:
 			return Global_1686511;
+			break;
+		
+		case 2:
+			return Global_1686512;
 			break;
 	}
 	return 0;
@@ -11915,7 +11915,7 @@ bool func_237(int iParam0, int iParam1, bool bParam2)
 
 bool func_238(int iParam0)
 {
-	return Global_1667995[iParam0] != 0;
+	return Global_1667996[iParam0] != 0;
 }
 
 void func_239()
@@ -11923,7 +11923,7 @@ void func_239()
 	int iVar0;
 	int iVar1;
 	
-	iVar0 = Global_1668022[5];
+	iVar0 = Global_1668023[5];
 	iVar1 = func_240(0, iVar0, 1, 0);
 	if (Global_262145.f_21271)
 	{
@@ -11933,7 +11933,7 @@ void func_239()
 	{
 		func_257("OR_RESUP_RES", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
 	}
-	else if (Global_1668022[5] >= Global_262145.f_18233)
+	else if (Global_1668023[5] >= Global_262145.f_18233)
 	{
 		func_257("OR_MIS_NA_B", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
 	}
@@ -12120,7 +12120,7 @@ void func_250()
 	{
 		func_257("OR_BS_NOT_SETUP", "OR_OVRLY_OK", "", 1, 0, -1, 0, 0, 0);
 	}
-	else if (Global_1668022[5] <= 0)
+	else if (Global_1668023[5] <= 0)
 	{
 		if (func_33(PLAYER::PLAYER_ID(), iLocal_146) == 0)
 		{
@@ -12208,7 +12208,7 @@ int func_255()
 
 bool func_256(int iParam0)
 {
-	return Global_1668003[iParam0] != 0;
+	return Global_1668004[iParam0] != 0;
 }
 
 void func_257(char* sParam0, char* sParam1, char* sParam2, bool bParam3, bool bParam4, int iParam5, int iParam6, char* sParam7, char* sParam8)
@@ -15246,7 +15246,7 @@ int func_321(int iParam0)
 			break;
 		
 		case 11:
-			if (!func_255() || Global_1668022[5] >= Global_262145.f_18233)
+			if (!func_255() || Global_1668023[5] >= Global_262145.f_18233)
 			{
 				return 1;
 			}
@@ -15268,7 +15268,7 @@ int func_323()
 	int iVar3;
 	
 	iVar0 = func_17(func_347(5), -1);
-	iVar1 = (iVar0 - Global_1668022[5]);
+	iVar1 = (iVar0 - Global_1668023[5]);
 	iVar2 = func_343(5, iLocal_146, 0);
 	iVar1 = (iVar1 - iVar2);
 	while (Global_2707897 != -1)
@@ -17101,7 +17101,7 @@ void func_366()
 	Var0 = { func_400(iLocal_146) };
 	iVar3 = func_13(PLAYER::PLAYER_ID(), iLocal_146);
 	iVar4 = func_34(PLAYER::PLAYER_ID(), iLocal_146);
-	iVar5 = Global_1668022[5];
+	iVar5 = Global_1668023[5];
 	iVar6 = func_395(iLocal_146);
 	sVar7 = func_319(iLocal_146);
 	StringCopy(&cVar8, "UA_BUNKER_TXD_", 24);
@@ -17640,7 +17640,7 @@ int func_396(int iParam0, int iParam1)
 {
 	if (iParam0 == 5)
 	{
-		if (Global_1668022[iParam0] > 0 && (!func_397(iParam1) || !func_28(PLAYER::PLAYER_ID(), iParam1)))
+		if (Global_1668023[iParam0] > 0 && (!func_397(iParam1) || !func_28(PLAYER::PLAYER_ID(), iParam1)))
 		{
 			if (!Global_262145.f_21270 || func_60(PLAYER::PLAYER_ID()))
 			{
@@ -17649,7 +17649,7 @@ int func_396(int iParam0, int iParam1)
 		}
 		return 0;
 	}
-	if ((Global_1668022[iParam0] > 0 && !func_397(iParam1)) && (!Global_262145.f_18761 || func_64(PLAYER::PLAYER_ID())))
+	if ((Global_1668023[iParam0] > 0 && !func_397(iParam1)) && (!Global_262145.f_18761 || func_64(PLAYER::PLAYER_ID())))
 	{
 		return 1;
 	}
@@ -17939,9 +17939,9 @@ int func_406(int iParam0, var uParam1, var uParam2, bool bParam3)
 
 void func_407(int iParam0)
 {
-	if (Global_1668003[iParam0] == 0)
+	if (Global_1668004[iParam0] == 0)
 	{
-		Global_1668003[iParam0] = NETWORK::GET_CLOUD_TIME_AS_INT();
+		Global_1668004[iParam0] = NETWORK::GET_CLOUD_TIME_AS_INT();
 		func_243(func_408(iParam0), 1, -1);
 		if (iParam0 != 5 && iParam0 != 6)
 		{
@@ -18333,7 +18333,7 @@ void func_424(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		Var0.f_4 = 0;
 	}
-	Var0.f_5 = Global_1668022[5];
+	Var0.f_5 = Global_1668023[5];
 	Var0.f_6 = func_13(iVar7, iVar8);
 	STATS::PLAYSTATS_GUNRUNNING_RND(&Var0);
 }
@@ -18587,13 +18587,13 @@ void func_433(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 				func_292(iVar0, 0);
 				func_436(iVar0, 0);
 			}
-			Global_1668003[iVar0] = 0;
+			Global_1668004[iVar0] = 0;
 			func_243(func_408(iVar0), 0, -1);
 			func_243(func_435(iVar0), 0, -1);
 			if (func_32(iParam1) == 1)
 			{
-				Global_1668020 = 1;
-				Global_1668033 = 0;
+				Global_1668021 = 1;
+				Global_1668034 = 0;
 			}
 			Global_1845221[iParam0 /*889*/].f_268.f_199[iVar0 /*13*/].f_8 = 0;
 			func_243(func_326(iVar0), 0, -1);
@@ -18613,8 +18613,8 @@ void func_433(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 
 void func_434(int iParam0)
 {
-	MISC::CLEAR_BIT(&Global_1668030, iParam0);
-	MISC::CLEAR_BIT(&Global_1668030, iParam0 + 7);
+	MISC::CLEAR_BIT(&Global_1668031, iParam0);
+	MISC::CLEAR_BIT(&Global_1668031, iParam0 + 7);
 }
 
 int func_435(int iParam0)
@@ -18649,9 +18649,9 @@ int func_435(int iParam0)
 
 void func_436(int iParam0, int iParam1)
 {
-	if (iParam0 != -1 && iParam1 != Global_1668022[iParam0])
+	if (iParam0 != -1 && iParam1 != Global_1668023[iParam0])
 	{
-		Global_1668022[iParam0] = iParam1;
+		Global_1668023[iParam0] = iParam1;
 	}
 }
 
@@ -19354,8 +19354,8 @@ void func_457()
 	int iVar0;
 	int iVar1;
 	
-	iVar0 = func_240(0, Global_1668022[5], 1, 0);
-	iVar1 = func_240(1, Global_1668022[5], 1, 0);
+	iVar0 = func_240(0, Global_1668023[5], 1, 0);
+	iVar1 = func_240(1, Global_1668023[5], 1, 0);
 	if (iVar0 < iVar1)
 	{
 		func_365(&iVar0, &iVar1, iVar1);
@@ -19374,9 +19374,9 @@ void func_457()
 
 void func_458(int iParam0)
 {
-	if (Global_1667995[iParam0] == 0)
+	if (Global_1667996[iParam0] == 0)
 	{
-		Global_1667995[iParam0] = NETWORK::GET_CLOUD_TIME_AS_INT();
+		Global_1667996[iParam0] = NETWORK::GET_CLOUD_TIME_AS_INT();
 		func_305(func_459(iParam0), 1, -1, 1);
 	}
 }
@@ -19504,7 +19504,7 @@ void func_462(int iParam0, int iParam1)
 	int iVar6;
 	int iVar7;
 	
-	iVar0 = Global_1668022[func_247(iParam0)];
+	iVar0 = Global_1668023[func_247(iParam0)];
 	fVar1 = (SYSTEM::TO_FLOAT((100 - iVar0)) / 20f);
 	iVar2 = SYSTEM::CEIL(fVar1);
 	bVar3 = iParam0 == 32;
@@ -20066,7 +20066,7 @@ void func_504()
 	
 	if (((MISC::GET_FRAME_COUNT() % 30) == 0 && !func_322()) && !func_497())
 	{
-		iVar0 = Global_1668022[5];
+		iVar0 = Global_1668023[5];
 		iVar1 = func_12(iLocal_146, PLAYER::PLAYER_ID());
 		iVar2 = func_34(PLAYER::PLAYER_ID(), iLocal_146);
 		iVar3 = 0;
@@ -20319,13 +20319,13 @@ void func_510(bool bParam0)
 
 void func_511(int iParam0, int iParam1)
 {
-	MISC::SET_BIT(&(Global_1673654.f_1047), iParam0);
+	MISC::SET_BIT(&(Global_1673655.f_1047), iParam0);
 	switch (iParam0)
 	{
 		case 5:
 			if (iParam1 > -1)
 			{
-				Global_1673654.f_170[iParam1] = 1;
+				Global_1673655.f_170[iParam1] = 1;
 			}
 			break;
 	}
@@ -21276,11 +21276,11 @@ bool func_555(int iParam0, int iParam1)
 		case 5:
 			if (iParam1 > -1)
 			{
-				return Global_1673654.f_203[iParam1];
+				return Global_1673655.f_203[iParam1];
 			}
 			break;
 	}
-	return BitTest(Global_1673654.f_1048, iParam0);
+	return BitTest(Global_1673655.f_1048, iParam0);
 }
 
 void func_556()
@@ -21469,7 +21469,7 @@ void func_564()
 	}
 	func_570(1);
 	iLocal_146 = func_51(PLAYER::PLAYER_ID());
-	iLocal_136 = Global_1668022[5];
+	iLocal_136 = Global_1668023[5];
 	iLocal_137 = func_12(iLocal_146, PLAYER::PLAYER_ID());
 	iLocal_138 = func_34(PLAYER::PLAYER_ID(), iLocal_146);
 	iLocal_153 = func_33(PLAYER::PLAYER_ID(), iLocal_146);

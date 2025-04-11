@@ -65,7 +65,7 @@ void __EntryFunction__()
 	fLocal_29 = 140f;
 	fLocal_30 = 180f;
 	iLocal_33 = 3;
-	Global_1579734 = 1;
+	Global_1579735 = 1;
 	func_46();
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
@@ -87,7 +87,7 @@ void __EntryFunction__()
 	while (true)
 	{
 		func_37();
-		if (((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() || func_29()) || Global_1579734 == 0) || func_28())
+		if (((!NETWORK::NETWORK_IS_GAME_IN_PROGRESS() || func_29()) || Global_1579735 == 0) || func_28())
 		{
 			func_25();
 		}
@@ -1249,7 +1249,7 @@ void func_27()
 
 bool func_28()
 {
-	return (!Global_1579730 && NETWORK::NETWORK_IS_ACTIVITY_SESSION());
+	return (!Global_1579731 && NETWORK::NETWORK_IS_ACTIVITY_SESSION());
 }
 
 int func_29()
@@ -4649,7 +4649,7 @@ int func_43()
 
 int func_44()
 {
-	if (Global_1579730)
+	if (Global_1579731)
 	{
 		return 1;
 	}
@@ -4679,11 +4679,11 @@ int func_45(int iParam0)
 
 void func_46()
 {
-	while (!NETWORK::NETWORK_TRY_TO_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, Global_1579749))
+	while (!NETWORK::NETWORK_TRY_TO_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, Global_1579750))
 	{
 		SYSTEM::WAIT(0);
 	}
-	Global_1579749++;
+	Global_1579750++;
 	func_47(0, -1, 0);
 	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(&Local_38, 3, 0);
 }

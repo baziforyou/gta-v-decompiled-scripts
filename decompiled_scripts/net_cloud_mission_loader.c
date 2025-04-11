@@ -4161,17 +4161,17 @@ int func_132(var uParam0, char* sParam1, int* iParam2, int iParam3, bool bParam4
 			}
 			else if (Global_4718592 == 1)
 			{
-				Global_1685199.f_4 = 99;
-				Global_1685199.f_6 = Global_4718592.f_3550;
-				Global_1685199.f_7 = Global_4980736.f_89295;
-				Global_1685199.f_9 = Global_4718592.f_121863;
-				Global_1685199.f_11 = Global_4718592.f_3551;
-				Global_1685199.f_12 = Global_4718592.f_3553;
-				Global_1685199.f_13 = Global_4718592.f_3555;
-				Global_1685199.f_14 = Global_4718592.f_3554;
-				Global_1685199.f_16 = Global_4718592.f_3524;
-				Global_1685199.f_5 = Global_4718592.f_3547;
-				Global_1685199.f_10 = Global_4718592.f_3561;
+				Global_1685200.f_4 = 99;
+				Global_1685200.f_6 = Global_4718592.f_3550;
+				Global_1685200.f_7 = Global_4980736.f_89295;
+				Global_1685200.f_9 = Global_4718592.f_121863;
+				Global_1685200.f_11 = Global_4718592.f_3551;
+				Global_1685200.f_12 = Global_4718592.f_3553;
+				Global_1685200.f_13 = Global_4718592.f_3555;
+				Global_1685200.f_14 = Global_4718592.f_3554;
+				Global_1685200.f_16 = Global_4718592.f_3524;
+				Global_1685200.f_5 = Global_4718592.f_3547;
+				Global_1685200.f_10 = Global_4718592.f_3561;
 			}
 			else if (func_142())
 			{
@@ -22495,7 +22495,7 @@ int func_400(int iParam0, int iParam1)
 					return func_401(joaat("impaler2"));
 				
 				case 6:
-					if (Global_1685298)
+					if (Global_1685299)
 					{
 						return joaat("imperator");
 					}

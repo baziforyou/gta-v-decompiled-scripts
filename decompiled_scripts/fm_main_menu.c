@@ -720,18 +720,18 @@ bool func_17()
 
 int func_18()
 {
-	if (BitTest(Global_1673654.f_102, 1))
+	if (BitTest(Global_1673655.f_102, 1))
 	{
 		return 1;
 	}
-	if (BitTest(Global_1673654.f_102, 2))
+	if (BitTest(Global_1673655.f_102, 2))
 	{
-		MISC::CLEAR_BIT(&(Global_1673654.f_102), 2);
+		MISC::CLEAR_BIT(&(Global_1673655.f_102), 2);
 		return 2;
 	}
-	if (BitTest(Global_1673654.f_102, 3))
+	if (BitTest(Global_1673655.f_102, 3))
 	{
-		MISC::CLEAR_BIT(&(Global_1673654.f_102), 3);
+		MISC::CLEAR_BIT(&(Global_1673655.f_102), 3);
 		return 3;
 	}
 	return 0;

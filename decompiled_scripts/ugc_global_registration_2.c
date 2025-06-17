@@ -8,5 +8,6 @@ void __EntryFunction__()
 	Global_1058426 = 1;
 	Global_1058427 = -1;
 	Global_1058428 = 1;
+	Global_1058429 = 1;
 }
 
